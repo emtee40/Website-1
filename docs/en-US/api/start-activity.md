@@ -1,39 +1,39 @@
-# 通过 startActivity 冻结解冻应用程序
-[[toc]]
+# Freeze and unfreeze the application by startactivity
+ [[toc]]
 
-## 授权范围
-- 获取已冻结应用列表、进行冻结应用、进行解冻应用。
+ ## Authorization scope
+ -Get the list of frozen apps, freeze apps, and unfreeze apps.
 
-## 如何使用
+ ## how to use
 
-### 声明权限
-- 需要在`AndroidManifest.xml`中声明权限（按需申请）
-  - 获取已冻结应用列表
-    ``` xml
-    <uses-permission android:name="cf.playhi.freezeyou.permission.GET_DISABLED_APPLICATIONS"/>
-    ```
-  - 进行解冻应用
-    ``` xml
-    <uses-permission android:name="cf.playhi.freezeyou.permission.ENABLE_APPLICATIONS"/>
-    ```
-  - 进行冻结应用
-    ``` xml
-    <uses-permission android:name="cf.playhi.freezeyou.permission.DISABLE_APPLICATIONS"/>
-    ```
+ ### Declare permissions
+ -Need to declare permissions in `androidmanifest.xml` (apply on demand)
+   -Get the list of frozen apps
+     ``` xml
+     <uses-permission android:name="cf.playhi.freezeyou.permission.GET_DISABLED_APPLICATIONS"/>
+     ```
+   -Perform defrost application
+     ``` xml
+     <uses-permission android:name="cf.playhi.freezeyou.permission.ENABLE_APPLICATIONS"/>
+     ```
+   -Freeze the application
+     ``` xml
+     <uses-permission android:name="cf.playhi.freezeyou.permission.DISABLE_APPLICATIONS"/>
+     ```
 
-## Sample
-- [FreezeYouApiTest](https://github.com/Playhi/FreezeYouApiTest)
+ ## Sample
+ -[FreezeYouApiTest](https://github.com/Playhi/FreezeYouApiTest)
 
-## FAQ
-### ActivityNotFoundException
-- 已安装的是老版本FreezeYou或未安装FreezeYou
+ ## FAQ
+ ### ActivityNotFoundException
+ -The old version of FreezeYou is installed or FreezeYou is not installed
 
-### SecurityException
-- 是否已经在 **Manifest** 中声明了权限呢（`冻结\解冻应用`还需要类似请求敏感权限一样进行 **`requestPermissions`** ）
+ ### SecurityException
+ -Has the permission been declared in the **Manifest** (`freeze\unfreeze the application` also needs to be similar to requesting sensitive permissions **`requestPermissions`**
 
-## Current Limitation
-- 需要在安装**FreezeYou**后再安装或更新（覆盖安装）使用相关权限的应用，否则可能会报 Exception （在 Android Google 的文档中有提及需要在请求前安装）
+ ## Current Limitation
+ -You need to install or update (overwrite installation) applications that use relevant permissions after installing **FreezeYou**, otherwise, an Exception may be reported (in the Android Google documentation, it is mentioned that it needs to be installed before request)
 
-## Need Help
-* [Join QQ Group(704086494)](https://jq.qq.com/?_wv=1027&k=l356Aq75)
-- [Join QQ Group(838379270)](https://jq.qq.com/?_wv=1027&k=5vmxG1F)
+ ## Need Help
+ * [Join QQ Group(704086494)](https://jq.qq.com/?_wv=1027&k=l356Aq75)
+ -[Join QQ Group(838379270)](https://jq.qq.com/?_wv=1027&k=5vmxG1F)
