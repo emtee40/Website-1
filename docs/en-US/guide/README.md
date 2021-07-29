@@ -3,7 +3,8 @@
 Power save! No frequent charging! :zap:  
 Speed up! No stiff animation! :dash:  
 Keep silent! No unnecessary notification! :mute:  
-自冻秉持着体积小巧、功能丰富的目标而打造。它体积小巧，安装包体积不到1MB，小身材大能量；它功能丰富，再配合它的自定义能力，智能生活更得心应手。
+
+Self-freezing adheres to the goal of small size and rich functions.  It is small in size, the installation package volume is less than 1MB, and it has a small body and big energy; it is rich in functions, and with its customization capabilities, smart life is more convenient.
 
 ## Function
 
@@ -23,5 +24,3 @@ Keep silent! No unnecessary notification! :mute:
 * Support change interface style
 * Support backup and restore
 * And more other functions!
-
-
