@@ -1,37 +1,37 @@
-# NoRoot - FAQ
-[[toc]]
+# noroot-faq
+ [[toc]]
 
-## Hint
-- 如果想要启用免ROOT，但在来到这里之前还没有尝试过启用免ROOT，建议先前往[Enable NoRoot](../guide/enable-mroot.html)。
+ ## hint
+ -If you want to enable root-free, but have not tried to enable root-free before coming here, it is recommended to go to [enable noroot](../guide/enable-mroot.html) first.
 
-## adb server version doesn't match this client
-- **(仅限使用Windows系统的用户)** 把解压后得到的adb文件，删去占用空间较大的那个(约2544KB)，再试试？
-- 是否有PC端手机助手类软件占用了相关端口呢？可以先退出相关助手类软件（结束其PC端后台，含衍生内容）。
+ ## adb server version doesn't match this client
+ -**(Only for users of windows system)** Delete the adb file obtained after decompression and delete the larger one (approximately 2544kb), and try again?
+ -Is there any PC mobile phone assistant software that occupies the relevant ports?  You can first exit the related assistant software (end its PC background, including derivative content).
 
-## error: device unauthorized
-- 请在被操作设备上点击确认允许操作。
+ ## error: device unauthorized
+ -Please click Confirm on the operated device to allow the operation.
 
-## java.lang.IllegalStateException: ... there are already several accounts ... (“正在尝试启用免ROOT模式……”)
-- 请检查您系统设置中账户中的账户是否全部删除了(需要全部删除，免ROOT启用后，可以再手动加回去)(实在删不掉的账户，可以试试断开网络连接以后删除，还不行的话可以试试先备份相关的应用数据以后卸载相关应用，成功后再恢复备份)，如果不清楚是哪个应用程序的账户没有清除干净，请在`“正在尝试启用免ROOT模式……”`上方，寻找`“当前设备账户信息：”`在`Accounts`组中，检查`type=`这一项，`=`后面的是应用程序包名，然后在 **自冻 FreezeYou** 列表中寻找该包名对应的程序即可获知账户来自哪个应用程序。
-- 也可以尝试重启至<b>安全模式</b>（调出关机界面后，长按显示的“关机”按钮），再次尝试进行激活。
+ ## java.lang.IllegalStateException: ... there are already several accounts ... ("Trying to enable ROOT-free mode......")
+ -Please check whether all the accounts in the account in your system settings have been deleted (you need to delete them all, you can manually add them back after the ROOT is not required) (the accounts that can't be deleted, you can try to delete them after disconnecting the network connection.  If it doesn’t work, you can try to back up the relevant application data first and then uninstall the relevant application, and then restore the backup after success.) If you don’t know which application’s account is not cleared, please click on `"Trying to enable ROOT-free mode..."`  At the top, look for `"Current device account information:"` In the `Accounts` group, check the item `type=`, the application package name after `=`, and then in the list of **FreezeYou**  Find the program corresponding to the package name to know which application the account comes from.
+ -You can also try to restart to <b>safe mode</b> (after calling up the shutdown interface, long press the displayed "shutdown" button), and try to activate again.
 
-## java.lang.IllegalStateException: ... there are already several users ... (“正在尝试启用免ROOT模式……”)
-- 请检查您系统设置中可见的其他用户是否已经删除了、分身应用是否已经关闭了(部分分身的实现利用的是 Android 自带的多用户功能，会影响免ROOT的启用)，如果还是失败，可以尝试 `adb shell pm remove-user [USER_ID]` <Badge text="该操作可能导致系统自带的分身功能无法正常使用" type="error"/>。
+ ## java.lang.IllegalStateException: ... there are already several users ... ("Trying to enable ROOT-free mode......")
+ -Please check whether other users visible in your system settings have been deleted and the clone application has been closed (some clones are implemented using Android's own multi-user function, which will affect the enabling of ROOT-free), if it still fails,  You can try `adb shell pm remove-user [USER_ID]` <Badge text="This operation may cause the system's built-in clone function to not work properly" type="error"/>.
 
-## java.lang.SecurityException: Neither user 2000 nor current process has android.permission.MANAGE\_DEVICE\_ADMINS
-- 在 `USB调试` 下方 还有一个 `USB调试(安全设置)`，也需要打开，如果提示登录小米账号，请避免勾选 同步 项。[MIUI公告](https://www.miui.com/thread-5711795-1-1.html)
+ ## java.lang.SecurityException: Neither user 2000 nor current process has android.permission.MANAGE\_DEVICE\_ADMINS
+ -There is a `USB debugging (security setting)` under the `USB debugging`, which also needs to be turned on. If you are prompted to log in to your Xiaomi account, please avoid checking the synchronization option.  [MIUI announcement](https://www.miui.com/thread-5711795-1-1.html)
 
-## 好麻烦，有没有简单点的
-- [使用 AutumnBox 启用 自冻FreezeYou 免ROOT模式](https://www.atmb.top/?from=freezeyou)
+ ## So troublesome, is there something simpler
+ -[Use AutumnBox to enable FreezeYou free ROOT mode](https://www.atmb.top/?from=freezeyou)
 
-## 激活以后，USB 调试之类的可以关掉吗？
-- 正常情况下是可以的（目前还没有收到关闭后失效或无法关闭的情况），同时为了安全考虑，也建议激活完成后`关闭 USB 调试`。
+ ## After activation, can USB debugging be turned off?
+ -Under normal circumstances, it is okay (currently, we have not received any failure or failure to turn off after being turned off). At the same time, for safety reasons, it is also recommended to `Turn off USB debugging` after activation.
 
-## 启用以后能否卸载？
-- 可以卸载，但可能需要先到 `更多设置` → `危险区` 点击 `解除免ROOT`，然后正常卸载即可。
+ ## Can it be uninstalled after enabling?
+ -It can be uninstalled, but you may need to go to `More Settings` → `Dangerous Zone` and click `Release Free ROOT`, and then uninstall normally.
 
-## More Faq
-* [FAQ](../faq/)
+ ## More Faq
+ * [FAQ](../faq/)
 
-## Need More Help
-- [Join QQ Group(704086494)](https://jq.qq.com/?_wv=1027&k=5RJffet)
+ ## Need More Help
+ -[Join QQ Group(704086494)](https://jq.qq.com/?_wv=1027&k=5RJffet)
