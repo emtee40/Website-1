@@ -8,14 +8,17 @@
 
  ### Declare permissions
  -Need to declare permissions in `androidmanifest.xml` (apply on demand)
+
    -Get the list of frozen apps
      ``` xml
      <uses-permission android:name="cf.playhi.freezeyou.permission.GET_DISABLED_APPLICATIONS"/>
      ```
+
    -Perform defrost application
      ``` xml
      <uses-permission android:name="cf.playhi.freezeyou.permission.ENABLE_APPLICATIONS"/>
      ```
+
    -Freeze the application
      ``` xml
      <uses-permission android:name="cf.playhi.freezeyou.permission.DISABLE_APPLICATIONS"/>
@@ -25,6 +28,7 @@
  -[FreezeYouApiTest](https://github.com/Playhi/FreezeYouApiTest)
 
  ## FAQ
+
  ### ActivityNotFoundException
  -The old version of FreezeYou is installed or FreezeYou is not installed
 
@@ -36,4 +40,4 @@
 
  ## Need Help
  * [Join QQ Group(704086494)](https://jq.qq.com/?_wv=1027&k=l356Aq75)
- -[Join QQ Group(838379270)](https://jq.qq.com/?_wv=1027&k=5vmxG1F)
+ * [Join QQ Group(838379270)](https://jq.qq.com/?_wv=1027&k=5vmxG1F)
