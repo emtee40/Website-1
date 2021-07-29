@@ -1,8 +1,8 @@
 # scheduled task-faq
 
  ## It seems that the scheduled task does not take effect
- * Is `自冻(freezeyou)` the latest version?
- * Is `self-freezing (freezeyou)` added to the background whitelist of the system?  (Including but not limited to allowing background operation, ignoring battery optimization)
+ * Is `(freezeyou)` the latest version?
+ * Is `(freezeyou)` added to the background whitelist of the system?  (Including but not limited to allowing background operation, ignoring battery optimization)
  * Did you miss the space in the task?
  * Did you hit more spaces in the task?
  * The comma needs an English comma `,`, don't type it into Chinese!
