@@ -1,95 +1,94 @@
-# Daily Use - FAQ
-[[toc]]
+# daily use-faq
+ [[toc]]
 
-## 点了冻结以后，对应的应用程序在桌面上找不到了
-- 是的。正常情况下，无特殊处理的话是会消失的，但不必担心，解冻后对应的应用程序会再次出现的，相关数据**正常情况**下不会丢失。
-- 那我怎么方便的打开对应的应用程序？可在 `自冻 FreezeYou` 的应用列表中，创建对应应用程序的*桌面冻结解冻启动快捷方式*（建议在冻结前创建）。
+ ## After clicking freeze, the corresponding application can not be found on the desktop
+ - Yes.  Under normal circumstances, it will disappear without special treatment, but don’t worry, the corresponding application will reappear after thawing, and the relevant data will not be lost under normal conditions.
+ -How can I easily open the corresponding application?  In the application list of `self-freeze freezeyou`, create a desktop freeze-thaw startup shortcut of the corresponding application (it is recommended to create it before freezing).
 
-## 部分应用解冻不了
-- 有些应用是系统（含系统应用）执行了停用（冻结）的，目前在免ROOT模式下无法解冻。
-- 免ROOT模式冻结的，在使用 __自冻FreezeYou__ 以 __ROOT模式__ 时需要选择 __HIDE/UNHIDE__ 模式解冻。
+ ## Some apps cannot be unfreezed
+ -Some applications are disabled (frozen) by the system (including system applications), and currently cannot be unfrozen in the root-free mode.
+ -If you don't need to freeze in root mode, you need to choose __hide/unhide__ mode to unfreeze when using __self-freezefreezeyou__ in __root mode__.
 
-## 桌面为什么有三个图标
-- 目前的新版本已经默认只显示一个图标了。
-- 早期版本的图标有部分用户反馈夜间有些吓人，因此后来又加入了一个图标，同时又将早期版本的一个针对 Android 7.0 的圆形图标拆出单列，最终就出现了三个图标的壮观景象，不过不必担心，这三个图标可以在`更多设置`中自行选择开关，甚至可以全部关闭——使用拨号盘启动(需拨号软件支持，原生Android默认支持)。
+ ## Why are there three icons on the desktop
+ -The current new version has only one icon displayed by default.
+ -Some users reported that the early version of the icon was a bit scary at night, so an icon was added later, and a circular icon for android 7.0 from the early version was separated into a single column, and finally three icons appeared spectacular.  But don't worry, these three icons can be switched on and off in `More Settings`, and even all can be turned off-use the dial pad to start (requires dial-up software support, native android default support).
 
-## 我不小心把桌面的三个图标全关了，而我的桌面又不支持暗码启动 FreezeYou
-- 啊哈，不必担心，进入`系统设置`，然后在`应用程序`中找到`自冻FreezeYou`，那个熟悉的`清除数据`是不是被`管理空间`吃掉了啊？这就对了，点一下`管理空间`，熟悉的一切就又回来啦！
+ ## I accidentally turned off all three icons on the desktop, and my desktop does not support password startup freezeyou
+ -Aha, don’t worry, enter `System Settings`, and then find `Freezeyou` in `Applications`. Is the familiar `Clear Data` eaten by `Manage Space`?  That's right, click on `Manage Space`, everything you are familiar with will come back!
 
-## 一键锁屏后只能密码解锁了
-- 是的，在**部分**设备上（尤其是依托于Google服务实现人脸或指纹解锁的设备上），出于安全因素考虑，系统是强制的使在通过设备管理器锁屏的情况下禁止人脸、指纹、以及SmartLock的（[谷歌官方解释在这里](https://issuetracker.google.com/issues/37010802#comment110)）。
-- 自`5.2`版本开始，已ROOT的设备使用一键锁屏已能够不再影响 Smartlock 。
+ ## After one-key lock screen can only be unlocked by password
+ -Yes, on **some** devices (especially devices that rely on Google services to unlock the face or fingerprint), for security reasons, the system is mandatory to lock the screen through the device manager  Under the prohibition of face, fingerprint, and smartlock ([Google official explanation here](https://issuetracker.google.com/issues/37010802#comment110)).
+ -Starting from the `5.2` version, using one-key lock screen on ROOT devices can no longer affect Smartlock.
 
-## 为什么桌面上的快捷方式右下角有个小标志，能不能去掉
-- 自 Android 8.0 开始，Android 默认会在应用程序创建的快捷方式右下角加入来源应用程序的图标。
-- 自 FreezeYou 5.3 版本开始，可以在桌面的添加小部件（微件）中找到 一键冻结、一键解冻、一键锁屏 ，这个是没有右下角的标志的。
-- 自 FreezeYou 7.2 版本开始，可以通过添加桌面小部件（微件），找到 FreezeYou 分组，选择 冻结解冻启动 小部件，这个是没有右下角角标的，创建完成后使用时与创建桌面快捷方式等效。
+ ## Why is there a small logo in the lower right corner of the shortcut on the desktop, can it be removed?
+ -Starting from Android 8.0, Android will add the icon of the source application in the lower right corner of the shortcut created by the application by default.
+ -Since FreezeYou version 5.3, you can find one-key freeze, one-key thaw, and one-key lock screen in the added widgets (widgets) of the desktop. There is no logo in the lower right corner.
+ -Since FreezeYou version 7.2, you can add desktop widgets (widgets), find the FreezeYou group, and select Freeze/Unfreeze to start widgets. There is no icon in the lower right corner. After creation, it is equivalent to creating desktop shortcuts.
 
-## 应用列表里右侧的点是什么
-- 浅灰色是指该应用未冻结，如果是主题色（比如蓝色），是指对应的应用已经被冻结了。
+ ## What is the dot on the right in the application list
+ -Light gray means that the application is not frozen. If it is a theme color (such as blue), it means that the corresponding application has been frozen.
 
-## 锁屏后一键冻结似乎没有生效
-- 是否在`更多设置`中开启了`锁屏后一键冻结`的功能呢？
-- 是不是没有在系统或相关的管理软件中给予`自冻FreezeYou`后台服务的白名单呢？
-- 推荐通过在`计划任务`中的`触发器任务`中，使用触发器`关闭屏幕时`达到类似效果。
+ ## One-click freeze after lock screen does not seem to take effect
+ -Is the function of "one key freeze after lock screen" enabled in `More Settings`?
+ -Is there no whitelist for the background service of `FreezeYou` in the system or related management software?
+ -It is recommended to use the trigger `When the screen is turned off` in the `Trigger task` in the `Schedule task` to achieve a similar effect.
 
-## 离开冻结似乎无效诶
-- 是否在`更多设置`中开启了`离开冻结`的功能呢？
-- 有没有在系统设置中启用`自冻FreezeYou`的无障碍功能呢？
-- 是不是没有在系统或相关的管理软件中给予`自冻FreezeYou`后台服务的白名单呢？
+ ## Leaving the freeze seems to be invalid eh
+ -Is the function of `Leave Freeze` enabled in `More Settings`?
+ -Is the accessibility function of `FreezeYou` enabled in the system settings?
+ -Is there no whitelist for the background service of `FreezeYou` in the system or related management software?
 
-## 应用程序的图标似乎变成透明的了
-- 在 Android 8.0 、8.1 的部分设备上发生了这个问题。如何避免呢？不要在应用程序被冻结的时候更新或覆盖安装对应的应用程序即可避免。
+ ## The app icon seems to be transparent
+ -This problem has occurred on some devices with Android 8.0 and 8.1.  How to avoid it?  Do not update or overwrite the corresponding application when the application is frozen to avoid it.
 
-## 应用程序的图标变安卓机器人了
-- 在 Android 8.0 、8.1 的部分设备上发生了这个问题。如何避免呢？不要在应用程序被冻结的时候更新或覆盖安装对应的应用程序即可避免。
+ ## The icon of the application has become an Android robot
+ -This problem has occurred on some devices with Android 8.0 and 8.1.  How to avoid it?  Do not update or overwrite the corresponding application when the application is frozen to avoid it.
 
-## **解冻启动** 和 **冻解启动** 有什么区别
-- `单击功能` 中的 `解冻启动` 是解冻后启动（不会冻结），而 `冻解启动` 是 `自动冻解` 的一个衍生功能，会在解冻时提示或直接启动相应的应用程序。
+ ## What is the difference between **thawed start** and **freezed start**
+ -`Unfreeze start` in `click function` is to start after thawing (will not freeze), while `freeze start` is a derivative function of `automatic freeze and thaw`, it will prompt when thawing or directly start the corresponding application  program.
 
-## 桌面 一键冻结 一键解冻 快捷方式有时会没有效果
-- 部分设备系统对应用有极其严格的限制，一般情况下，开启针对`自冻FreezeYou`的电池免优化以及允许自启动后，该问题消失。
+ ## Desktop One-click freeze One-click defrost shortcuts sometimes have no effect
+ -Some device systems have extremely strict restrictions on applications. Under normal circumstances, the problem disappears after enabling the battery optimization for `FreezeYou` and allowing self-starting.
 
-## 无法在 自冻FreezeYou 中创建桌面快捷方式
-- 是否在权限中允许`自冻FreezeYou`创建快捷方式了呢？
-- 可以尝试使用`自冻FreezeYou`的`冻结/解冻/启动`桌面小部件达到同样效果。
+ ## Cannot create desktop shortcut in FreezeYou
+ -Do you allow `FreezeYou` to create shortcuts in the permissions?
+ -You can try to use the `Freeze/Unfreeze/Start` desktop widget of `FreezeYou` to achieve the same effect.
 
-## 应用分身、双开似乎用不了了
-- 启用免ROOT以后，部分设备可能会出现系统自带的应用分身无法正常使用的情况，如若发生此情况，可以使用其他第三方分身软件代替，暂无已知的更好的解决办法，如有更好的解决方案，欢迎联系我们。
+ ## App clone and dual opening seem to be out of use
+ -After enabling ROOT-free, some devices may not work normally with the application clone that comes with the system. If this happens, you can use other third-party clone software instead. There is currently no known better solution, if any  For better solutions, please contact us.
 
-## 我开启了 缓存应用程序图标 但是列表加载仍然很慢
-- 开启后第一次载入需要写入缓存，耗时会可能比较长的。
-- 如果后续仍然加载时间较长，请注意是否清除了 `自冻(FreezeYou)` 的缓存(Cache)数据，图标缓存是保存在缓存(Cache)数据中的，如果被清除，则需要重新生成。
-- 如果没有清除缓存数据，也不是第一次载入，那很可能您的设备的小文件读取效率较低，无法快速完成读取，导致载入缓慢。这问题不大，稍稍多等一会儿即可。
+ ## I turned on the cache application icon but the list loading is still very slow
+ -It needs to be written to the cache for the first load after it is turned on, which may take a long time.
+ -If the subsequent loading time is still long, please pay attention to whether the Cache data of `FreezeYou` is cleared. The icon cache is stored in the Cache data. If it is cleared, it needs to be regenerated.
+ -If the cache data is not cleared, and it is not the first time to load, it is likely that the small file reading efficiency of your device is low, and the reading cannot be completed quickly, resulting in slow loading.  This is not a big problem, just wait a little longer.
 
-## 主界面除了以一行一个的列表的方式展现，还有没有别的
-- 可至 `更多设置` - `外观` - `首页格局`，更换，支持列表（默认）、网格。
+ ## In addition to displaying the main interface as a line-by-line list, is there anything else?
+ -Go to `More settings`-`Appearance`-`Home page layout`, change, support list (default), grid.
 
-## 可否跟随系统的暗色模式自动调整我设定的日常配色方案至暗色
-- 至 `更多设置` - `外观`，勾选 `允许跟随系统自动切换暗色模式` 即可。
+ ## Can I follow the dark mode of the system to automatically adjust the daily color scheme I set to dark
+ -Go to `More settings`-`Appearance`, check the `Allow automatic switch to dark mode following the system`.
 
-## 我想移除通知栏里的特定应用的快捷冻结的通知，可我划不掉
-- 前往 `更多设置` - `通知栏` - `管理冻结解冻快捷通知` 中选中相应的应用程序，移除通知即可。
-- 这种情况一般是选中了 `更多设置` - `通知栏` - `冻结与解冻` 中的 `禁止滑动移除` 选项，如不需要，则关闭后下次创建的通知栏快捷操作就可以被滑动移除了。
+ ## I want to remove the quick freeze notification of a specific application in the notification bar, but I can’t cross it
+ -Go to `More Settings`-`Notification Bar`-Select the corresponding application in the `Manage Freeze/Unfreeze Quick Notifications` and remove the notification.
+ -In this case, you usually select `More settings`-`Notification bar`-The option of `No sliding to remove` in `Freeze and unfreeze`, if you don’t need it, you can just close the shortcut for the notification bar created next time.  Can be removed by sliding.
 
-## 我（不）想让自冻FreezeYou出现在最近应用列表里
-- 前往 `更多设置` - `常规`，调整 `显示在最近任务列表` 的启用与否即可。
+ ## I (don't) want FreezeYou to appear in the recent apps list
+ -Go to `More Settings`-`General`, and adjust whether the `Display in the recent task list` is enabled or not.
 
-## 能不能避免冻结尚有通知存在于通知栏的应用程序
-- 至 `更多设置` - `冻结与解冻`，勾选 `避免冻结有通知的应用程序` 即可。
+ ## Can you avoid freezing apps that have notifications in the notification bar?
+ -Go to `More settings`-`Freeze and unfreeze`, tick `Avoid freezing apps with notifications`.
 
-## 能不能避免冻结正在前台使用的应用程序
-- 至 `更多设置` - `冻结与解冻`，勾选 `避免冻结前台应用程序` 即可。
+ ## Can it be avoided to freeze applications that are being used in the foreground?
+ -Go to `More settings`-`Freeze and unfreeze`, check the `Avoid freezing foreground applications`.
 
-## 如何管理我的自选
-- 前往 `更多设置` - `管理空间` - `管理我的自选`，点击需要管理的自选即可管理。
+ ## How to manage my choice
+ -Go to `More settings`-`Manage space`-`Manage my preferences`, click on the desired selection to manage it.
 
-## 如何卸载？
-- `更多设置` - `危险区` - `卸载` 即可卸载。如果启用了 免ROOT 的话，可能需要点击 `解除免ROOT` 解除权限后，方能卸载。
+ ## How to uninstall?
+ -`More settings`-`Dangerous zone`-`Uninstall` to uninstall.  If ROOT-free is enabled, you may need to click `Remove ROOT-free` to remove permissions before uninstalling.
 
-## More Faq
-* [FAQ](../faq/)
+ ## More Faq
+ * [FAQ](../faq/)
 
-## Need More Help
-- [Join QQ Group(704086494)](https://jq.qq.com/?_wv=1027&k=5RJffet)
-
+ ## Need More Help
+ -[Join QQ Group(704086494)](https://jq.qq.com/?_wv=1027&k=5RJffet)
