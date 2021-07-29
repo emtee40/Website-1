@@ -1,118 +1,118 @@
-# 通过 Provider 进行冻结解冻以及数据查询等操作
-[[toc]]
+# Perform operations such as freezing, unfreezing and data query through the provider
+ [[toc]]
 
-## 版本要求
-- **自冻(FreezeYou)** 版本不小于 **9.0** 。
-- 部分需要更高版本（已标注）。
+ ## Version requirements
+ -**Freezeyou** version is not less than **9.0**.
+ -Some require a higher version (marked).
 
-## 授权范围
-- 获取当前 __自冻(FreezeYou)__ 的运行模式、获取已冻结应用列表、获取是否可通过 __自冻(FreezeYou)__ 安装应用<Badge text="9.2+" type="tip"/>、进行冻结应用操作、进行解冻应用操作。
+ ## Authorization scope
+ -Get the current running mode of __自冻(freezeyou)__, get the list of frozen applications, and get whether the application can be installed through __自冻(freezeyou)__<badge text="9.2+" type="tip"/>  , Perform freezing application operations and unfreeze application operations.
 
-## 如何使用
+ ## how to use
 
-### 声明权限
-- 需要在`AndroidManifest.xml`中声明权限（按需申请）
-  - 获取当前 __自冻(FreezeYou)__ 的运行模式：
-    ``` xml
-    <uses-permission android:name="cf.playhi.freezeyou.permission.QUERY_STATUS" />
-    ```
-  - 获取应用是否被冻结：
-    ``` xml
-    <uses-permission android:name="cf.playhi.freezeyou.permission.QUERY_STATUS" />
-    ```
-  - 进行解冻应用操作：
-    ``` xml
-    <uses-permission android:name="cf.playhi.freezeyou.permission.ENABLE_APPLICATIONS" />
-    ```
-  - 进行冻结应用操作：
-    ``` xml
-    <uses-permission android:name="cf.playhi.freezeyou.permission.DISABLE_APPLICATIONS" />
-    ```
+ ### Declare permissions
+ -Need to declare permissions in `androidmanifest.xml` (apply on demand)
+   -Get the current running mode of __自冻(freezeyou)__:
+     ``` xml
+     <uses-permission android:name="cf.playhi.freezeyou.permission.QUERY_STATUS" />
+     ```
+   -Get whether the app is frozen:
+     ``` xml
+     <uses-permission android:name="cf.playhi.freezeyou.permission.QUERY_STATUS" />
+     ```
+   -Perform defrosting application operations:
+     ``` xml
+     <uses-permission android:name="cf.playhi.freezeyou.permission.ENABLE_APPLICATIONS" />
+     ```
+   -Perform freezing application operations:
+     ``` xml
+     <uses-permission android:name="cf.playhi.freezeyou.permission.DISABLE_APPLICATIONS" />
+     ```
 
-### 代码示例
-- 获取当前运行模式：
-  ``` java
-  Bundle resultBundle = getContentResolver().call(
-      Uri.parse("content://cf.playhi.freezeyou.export.QUERY"), 
-      "QUERY_MODE", null, new Bundle()
-  );
-  String currentMode = resultBundle.getString("currentMode", "Failed");
-  ```
+ ### Code example
+ -Get the current operating mode:
+   ``` java
+   Bundle resultBundle = getContentResolver().call(
+       Uri.parse("content://cf.playhi.freezeyou.export.QUERY"),
+       "QUERY_MODE", null, new Bundle()
+   );
+   String currentMode = resultBundle.getString("currentMode", "Failed");
+   ```
 
-- 获取应用是否被冻结：
-  ``` java
-  Bundle willBeSend = new Bundle();
-  willBeSend.putString("packageName", packageName);
-  Bundle resultBundle = getContentResolver().call(
-      Uri.parse("content://cf.playhi.freezeyou.export.QUERY"), 
-      "QUERY_FREEZE_STATUS", null, willBeSend
-  );
-  int resultStatusCode = resultBundle.getInt("status", 123456);
-  ```
+ -Get whether the app is frozen:
+   ``` java
+   Bundle willBeSend = new Bundle();
+   willBeSend.putString("packageName", packageName);
+   Bundle resultBundle = getContentResolver().call(
+       Uri.parse("content://cf.playhi.freezeyou.export.QUERY"),
+       "QUERY_FREEZE_STATUS", null, willBeSend
+   );
+   int resultStatusCode = resultBundle.getInt("status", 123456);
+   ```
 
-- 进行解冻应用操作：
-  ``` java
-  Bundle willBeSend = new Bundle();
-  willBeSend.putString("packageName", pkgName);
-  Bundle resultBundle = getContentResolver().call(
-      Uri.parse("content://cf.playhi.freezeyou.export.UNFREEZE"), 
-      "MODE_AUTO", null, willBeSend
-  );
-  int resultCode = resultBundle.getInt("result", 123456);
-  ```
+ -Perform defrosting application operations:
+   ``` java
+   Bundle willBeSend = new Bundle();
+   willBeSend.putString("packageName", pkgName);
+   Bundle resultBundle = getContentResolver().call(
+       Uri.parse("content://cf.playhi.freezeyou.export.UNFREEZE"),
+       "MODE_AUTO", null, willBeSend
+   );
+   int resultCode = resultBundle.getInt("result", 123456);
+   ```
 
-- 进行冻结应用操作：
-  ``` java
-  Bundle willBeSend = new Bundle();
-  willBeSend.putString("packageName", pkgName);
-  Bundle resultBundle = getContentResolver().call(
-      Uri.parse("content://cf.playhi.freezeyou.export.FREEZE"), 
-      "MODE_AUTO", null, willBeSend
-  );
-  int resultCode = resultBundle.getInt("result", 123456);
-  ```
+ -Perform freezing application operations:
+   ``` java
+   Bundle willBeSend = new Bundle();
+   willBeSend.putString("packageName", pkgName);
+   Bundle resultBundle = getContentResolver().call(
+       Uri.parse("content://cf.playhi.freezeyou.export.FREEZE"),
+       "MODE_AUTO", null, willBeSend
+   );
+   int resultCode = resultBundle.getInt("result", 123456);
+   ```
 
-## 参数要求
+ ## Parameter requirements
 
-| 用途           | Uri                                                       | Method        | Arg   | Extras    |
-| ------------- | --------------------------------------------------------- |:-------------:|:-----:| --------- |
-| 获取当前运行模式 | `Uri.parse("content://cf.playhi.freezeyou.export.QUERY")` | `QUERY_MODE` | 不适用 | 空 Bundle |
-| 获取应用是否被冻结 | `Uri.parse("content://cf.playhi.freezeyou.export.QUERY")` | `QUERY_FREEZE_STATUS` | 不适用 | Bundle，键 packageName 必须包含被查询的应用包名 |
-| 获取是否可通过**自冻**安装应用<Badge text="9.2+" type="tip"/> | `Uri.parse("content://cf.playhi.freezeyou.export.QUERY)` | `QUERY_IF_CAN_INSTALL_APPLICATIONS_STATUS` | 不适用 | 空 Bundle |
-| 进行解冻应用操作 | `Uri.parse("content://cf.playhi.freezeyou.export.UNFREEZE")` | `MODE_AUTO`或`MODE_ROOT`或`MODE_MROOT` | 不适用 | Bundle，键 packageName 必须包含被解冻的应用包名 |
-| 进行冻结应用操作 | `Uri.parse("content://cf.playhi.freezeyou.export.FREEZE")` | `MODE_AUTO`或`MODE_ROOT`或`MODE_MROOT` | 不适用 | Bundle，键 packageName 必须包含被冻结的应用包名 |
+ | Use | Uri | Method | Arg | Extras |
+ | ------------- | -----------------------------------  ---------------------- |:-------------:|:-----:| ---  ------ |
+ | Get the current running mode | `Uri.parse("content://cf.playhi.freezeyou.export.QUERY")` | `QUERY_MODE` | Not applicable | Empty Bundle |
+ | Get whether the application is frozen | `Uri.parse("content://cf.playhi.freezeyou.export.QUERY")` | `QUERY_FREEZE_STATUS` | Not applicable | Bundle, the key packageName must contain the name of the queried application package |
+ | Get whether the application can be installed through **self-freezing**<Badge text="9.2+" type="tip"/> | `Uri.parse("content://cf.playhi.freezeyou.export.QUERY)`  | `QUERY_IF_CAN_INSTALL_APPLICATIONS_STATUS` | Not Applicable | Empty Bundle |
+ | Perform unfreezing application operations | `Uri.parse("content://cf.playhi.freezeyou.export.UNFREEZE")` | `MODE_AUTO` or `MODE_ROOT` or `MODE_MROOT` | Not applicable | Bundle, key packageName must contain  The name of the unfrozen application package |
+ | Perform freezing application operations | `Uri.parse("content://cf.playhi.freezeyou.export.FREEZE")` | `MODE_AUTO` or `MODE_ROOT` or `MODE_MROOT` | Not applicable | Bundle, key packageName must contain  Frozen application package name |
 
 
-## 返回数据
-___如果对应键值为 `null`，则检查请求时的 `Method` 以及 `Extras` 是否为 `null` 。___
+ ## Return data
+ ___If the corresponding key value is `null`, check whether the `Method` and `Extras` in the request are `null`.  ___
 
-| 返回值 | 获取当前运行模式（键 currentMode ） | 获取应用是否被冻结（键 status ） | 进行解冻应用操作（键 result ） | 进行冻结应用操作（键 result ） | 获取是否可通过自冻安装应用（键 status ） |
-| ----- | ------------------------------- | ---------------------------- | --------------------------- | -------------------------- | ----------------------- |
-| dpm | DPM（免ROOT）模式（ROOT模式可能可用） | 不适用 | 不适用 | 不适用 | 不适用 |
-| root | ROOT模式（DPM模式不可用） | 不适用 | 不适用 | 不适用 | 不适用 |
-| unavailable | DPM 与 ROOT 模式均不可用 | 不适用 | 不适用 | 不适用 | 不适用 |
-| -4 | 不适用 | 不适用 | ROOT 模式解冻失败 | ROOT 模式冻结失败 | 不适用 |
-| -3 | 不适用 | 不适用 | DPM 模式解冻失败 | DPM 模式冻结失败 | 不适用 |
-| -2 | 不适用 | Bundle 中 packageName 键值为 null | Bundle 中 packageName 键值为 null | Bundle 中 packageName 键值为 null | 不适用 |
-| -1 | 不适用 | 自冻(FreezeYou) 内部错误 | 自冻(FreezeYou) 内部错误 | 自冻(FreezeYou) 内部错误 | 不适用 |
-| 0 | 不适用 | 未冻结 | 解冻成功 | 冻结成功 | 不适用 |
-| 1 | 不适用 | ROOT 模式冻结 | 不适用 | 不适用 | 不适用 |
-| 2 | 不适用 | DPM 模式冻结 | 不适用 | 不适用 | 不适用 |
-| 3 | 不适用 | DPM + ROOT 双模式冻结 | 不适用 | 不适用 | 不适用 |
-| 998 | 不适用 | 没有找到对应应用 | 没有找到对应应用 | 没有找到对应应用 | 不适用 |
-| 999 | 不适用 | 不适用 | 检查发现未冻结，无需解冻 | 检查发现未解冻，无需冻结 | 不适用 |
-| 其它 | 不适用 | 不适用 | 不适用 | 不适用 | boolean\[\]{预估功能可用,安装通道可用,有ROOT权限,有DPM权限} |
+ | Return value | Get the current running mode (key currentMode) | Get whether the application is frozen (key status) | Perform an unfreeze application operation (key result) | Perform a frozen application operation (key result) | Get whether the application can be installed through self-freezing (  Key status) |
+ | ----- | ------------------------------- | -----------  ----------------- | --------------------------- | ----  ---------------------- | ----------------------- |
+ | dpm | DPM (ROOT free) mode (ROOT mode may be available) | Not Applicable | Not Applicable | Not Applicable | Not Applicable |
+ | root | ROOT mode (DPM mode is not available) | Not Applicable | Not Applicable | Not Applicable | Not Applicable |
+ | unavailable | DPM and ROOT modes are not available | Not applicable | Not applicable | Not applicable | Not applicable |
+ | -4 | Not Applicable | Not Applicable | ROOT Mode Defrosting Failed | ROOT Mode Freezing Failed | Not Applicable |
+ | -3 | Not Applicable | Not Applicable | DPM Mode Defrosting Failed | DPM Mode Freezing Failed | Not Applicable |
+ | -2 | Not Applicable | The packageName key value in the Bundle is null | The packageName key value in the Bundle is null | The packageName key value in the Bundle is null | Not applicable |
+ | -1 | Not applicable | FreezeYou internal error | FreezeYou internal error | FreezeYou internal error | Not applicable |
+ | 0 | Not Applicable | Not Frozen | Successfully Thawed | Successfully Frozen | Not Applicable |
+ | 1 | Not Applicable | ROOT Mode Freeze | Not Applicable | Not Applicable | Not Applicable |
+ | 2 | Not Applicable | DPM Mode Freeze | Not Applicable | Not Applicable | Not Applicable |
+ | 3 | Not Applicable | DPM + ROOT Dual Mode Freeze | Not Applicable | Not Applicable | Not Applicable |
+ | 998 | Not applicable | Corresponding application not found | Corresponding application not found | Corresponding application not found | Not applicable |
+ | 999 | Not Applicable | Not Applicable | Check that it is not frozen, no need to defrost | Check that it is not thawed, no need to freeze | Not applicable |
+ | Others | Not Applicable | Not Applicable | Not Applicable | Not Applicable | boolean\[\]{Estimation function is available, installation channel is available, ROOT permission, DPM permission} |
 
-## Sample
-- [FreezeYouApiTest](https://github.com/Playhi/FreezeYouApiTest)
+ ## Sample
+ -[FreezeYouApiTest](https://github.com/Playhi/FreezeYouApiTest)
 
-## FAQ
-### SecurityException
-  - 是否已经在 **Manifest** 中声明了权限呢（`冻结\解冻应用`还需要类似请求敏感权限一样进行 **`requestPermissions`** ）。
+ ## FAQ
+ ### SecurityException
+   -Has the permission been declared in the **Manifest** (`freeze\unfreeze the application` also needs to be similar to requesting sensitive permissions **`requestPermissions`**).
 
-## Current Limitation
-- 需要在安装**自冻 FreezeYou**后再安装或更新（覆盖安装）使用相关权限的应用，否则可能会报 Exception （在 Android Google 的文档中有提及需要在请求前安装）。
+ ## Current Limitation
+ -You need to install or update (overwrite installation) applications that use relevant permissions after installing **self-freezing FreezeYou**, otherwise, an Exception may be reported (it is mentioned in the Android Google documentation that it needs to be installed before request).
 
-## Need Help
-* [Join QQ Group(704086494)](https://jq.qq.com/?_wv=1027&k=l356Aq75)
-- [Join QQ Group(838379270)](https://jq.qq.com/?_wv=1027&k=5vmxG1F)
+ ## Need Help
+ * [Join QQ Group(704086494)](https://jq.qq.com/?_wv=1027&k=l356Aq75)
+ -[Join QQ Group(838379270)](https://jq.qq.com/?_wv=1027&k=5vmxG1F)
