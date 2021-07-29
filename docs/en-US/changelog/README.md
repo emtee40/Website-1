@@ -1,646 +1,646 @@
-# Changelog
-## V10
-### V10.15(2021.02.02)
-1. 【调整】主界面部分细节；
-2. 【修复】部分偶发 BUG。
-* [Download this version](https://github.com/FreezeYou/FreezeYou/releases/download/V10.15(141)/app-release.apk)
-
-### V10.14(2021.01.04)
-1. 【调整】勾选 启动时不再显示警示 时，不仅不再显示警示弹窗，加载动画上方的警示文字也不再显示。
-* [Download this version](https://github.com/FreezeYou/FreezeYou/releases/download/V10.14(140)/app-release.apk)
-
-### V10.13(2020.12.04)
-1. 【新增】通知栏磁贴 - 自冻，点按即可打开主界面。
-* [Download this version](https://github.com/FreezeYou/FreezeYou/releases/download/V10.13(139)/app-release.apk)
-
-### V10.12(2020.11.04)
-1. 【修正】修正、优化部分多语言相关内容（感谢 __tommynok__ 的帮助）。
-* [Download this version](https://github.com/FreezeYou/FreezeYou/releases/download/V10.12(138)/app-release.apk)
-
-### V10.11(2020.11.03)
-1. 【新增】乌克兰语翻译（感谢 __tommynok__ 的帮助）；
-2. 【新增】部分V2对外开放API（文档待更新）；
-3. 【优化】部分功能优化。
-* [Download this version](https://github.com/FreezeYou/FreezeYou/releases/download/V10.11(137)/app-release.apk)
-
-### V10.10(2020.10.04)
-1. 【更多】一些细节优化与问题修复。
-* [Download this version](https://github.com/FreezeYou/FreezeYou/releases/download/V10.10(136)/app-release.apk)
-
-### V10.9(2020.09.03)
-1. 【调整】白名单、Whitelist 更名至 允许名单、allow list；
-2. 【调整】移除所有 “赞助支持”；
-3. 【新增】俄语翻译（感谢 __tommynok__ 的帮助）；
-4. 【修复】一处会导致异常崩溃的问题（感谢 __tommynok__ 的帮助）；
-5. 【优化】多语言部分；
-6. 【更多】一些细节优化与问题修复。
-* [Download this version](https://github.com/FreezeYou/FreezeYou/releases/download/V10.9(135)/app-release.apk)
-
-### V10.8(2020.08.04)
-*   本版核心部分改动较多，虽经测试，仍然可能会有些许问题，如果担心的话可以晚几天再点更新。
-1. 【新增】冻结解冻时更详细的失败提示，而不是“失败”；
-2. 【修复】部分情况下 一键冻结、一键解冻 未正确执行的问题；
-3. 【调整】主列表全选反选移至折叠菜单外；
-4. 【调整】手动模式 界面；
-5. 【新增】手动模式 支持 所有已存在的冻结解冻模式；
-6. 【调整】无匹配时的默认语言由 简体中文 变更为 English；
-7. 【新增】关于软件 - 联系我们 - 电报群组；
-8. 【更多】一些稳定性与小问题修复。
-
-### V10.7(2020.07.25)
-1. 【新增】系统应用（DISABLE模式），系统应用（DISABLE\_USER模式），系统应用（DISABLE\_UNTIL\_USED模式）（可在 更多设置 - 冻结与解冻 - 选择冻结解冻模式 切换）；
-2. 【新增】快速入门 中的 冻结与解冻 - 选择冻结解冻模式；
-3. 【更多】一些细节优化调整。
-
-### V10.6(2020.07.20)
-1. 【调整】更多设置 - 常规 - 保存排序方式状态 默认由不勾选改为勾选；
-2. 【调整】完全移除 更多设置 - 冻结与解冻 中的 炼妖壶（Island） 模式。
-
-### V10.5(2020.06.21)
-1. 【新增】更多设置 - 通知栏 - 冻结与解冻 - 解冻后创建相应的快捷通知（开关选项）。
-
-### V10.4(2020.05.23)
-1. 【优化】优化调整多处细节。
-
-### V10.3(2020.04.24)
-1. 【调整】疑难解答等网页链接地址；
-2. 【调整】更多设置 新增分组 外观；
-3. 【优化】一些细节优化调整。
-
-### V10.2(2020.03.25)
-1. 【新增】更多设置 - 常规 - 显示列表的分割线；
-2. 【优化】主界面微调；
-3. 【调整】部分UI微调；
-4. 【提示】更多设置 - 冻结与解冻 - 模式 - 炼妖壶 目前无法使用（测试难以进行，优先级被下调，暂时停滞）；
-5. 【更多】一些细节调整；
-6. 【提示】如遇问题可至 关于软件 - 联系我们 上报。
-
-### V10.1(2020.03.08)
-1. 【新增】安装应用检查无权限时提示请求系统软件包安装程序进行安装；
-2. 【新增】主应用列表菜单 - 更多 - 卸载三方应用选项；
-3. 【新增】自适应系统暗色模式状态 以及 更多设置 - 常规 中的相应开关（仅 Android 10 及以上可见）；
-4. 【修复】部分设备上计划任务中无法正常开关WIFI的问题；
-5. 【调整】崩溃日志记录流程与生成文件输出位置；
-6. 【提示】如遇问题可至 关于软件 - 联系我们 上报。
-
-### V10.0(2020.02.15)
-1. 【新增】冻结解冻 ROOT - HIDE/UNHIDE 模式；
-2. 【新增】更多设置 - 冻结与解冻 - 选择冻结解冻模式；
-3. 【调整】冻结解冻流程调整。
-
-## V9
-### V9.8(2020.01.14)
-1. 【新增】更多设置 - 安装与卸载 - 尝试避免正在使用时更新；
-2. 【新增】安装应用确认界面 - 非前台时安装；
-3. 【新增】部分提示弹窗内容复制按钮；
-4. 【新增】关于 - 联系我们。
-
-### V9.7(2020.01.01)
-1. 【新增】列表多选 - 加入移出我的自选。
-
-### V9.6(2019.12.08)
-1. 【修复】首页格局为网格时，搜索框偶发无法使用的问题；
-2. 【调整】提醒检查更新间隔由20天调整至30天。
-
-### V9.5(2019.11.21)
-1. 【新增】长按图标快捷方式 - 计划任务；
-2. 【优化】部分场景下的文字显示；
-3. 【修复】文件夹部分情况下出现非预期情况的问题。
-
-### V9.4(2019.10.30)
-1. 【新增】备份内容增加安装应用白名单、URI冻结解冻白名单；
-2. 【调整】默认关闭自提供的安装应用入口（更新后如需要使用，请至 更多设置 - 安装与卸载，启用即可）；
-3. 【修复】一些问题修复。
-
-### V9.3(2019.10.09)
-1. 【新增】安装应用时，版本处增加显示 versionCode ；
-2. 【新增】主界面右下角操作按钮；
-3. 【调整】更换主界面计划任务入口图标，增加辨识度；
-4. 【修复】部分情况下应用崩溃的问题；
-5. 【新增】计划任务 - 触发器 - 冻结、解冻应用时，附加参数支持引用 我的列表。
-
-### V9.2(2019.09.21)
-1. 【新增】更多设置 - 管理空间 - 管理我的自选（含 分享、复制别名、删除）；
-2. 【新增】计划任务 - 任务 - ff、uf 指令参数支持引用“我的自选”中的应用集（通过应用别名）；
-3. 【新增】计划任务 - 触发器 - 打开应用时、离开应用时 附加参数支持引用“我的自选”中的应用集（通过应用别名）；
-4. 【新增】查询是否可通过 FreezeYou 静默安装应用的 API；
-5. 【新增】我的自选现已加入备份与恢复；
-6. 【更多】一些细节调整。
-
-### V9.1(2019.09.03)
-1. 【新增】查看模式 - 用户自定（我的列表）；
-2. 【调整】一些细节调整。
-
-### V9.0(2019.08.14)
-1. 【新增】更多设置 - 常规 - 首页格局 （列表、网格）；
-2. 【修复】界面风格为暗色时列表分类异常；
-3. 【新增】开放能力 - 通过 Provider 进行冻结解冻以及数据查询操作能力；
-4. 【更多】一些细节以及稳定性优化。
-
-## V8
-### V8.12(2019.07.29)
-1. 【新增】允许用于安装卸载卸载应用时，忽略对屏幕遮罩层的安全检测；
-2. 【修复】某些情况下，列表多选时项目选择状态显示异常；
-3. 【修复】卸载被解冻应用后通知栏冻结解冻快捷操作没有被正确移除；
-4. 【新增】计划任务 - 总览 页支持对各个计划任务进行开启与关闭操作；
-5. 【调整】计划任务 - 总览 页布局；
-6. 【修复】使用ROOT模式进行安装应用时安装状态显示不正确；
-7. 【更多】细节优化与错误修复。
-
-### V8.11(2019.07.13)
-1. 【新增】全选、反选；
-2. 【新增】计划任务 - 分享；
-3. 【新增】恢复备份时，可选择需要恢复的部分；
-4. 【优化】一些错误修复与细节调整。
-
-### V8.10(2019.06.30)
-1. 【优化】解冻次数、冻结次数、使用次数升序降序排序速度；
-2. 【新增】更多设置 - 常规 - 保存排序方式状态；
-3. 【新增】更多设置 - 管理空间 - 重置解冻次数计数、重置冻结次数计数、重置使用次数计数；
-4. 【新增】简单的载入情况提示；
-5. 【修复】界面风格为“暗色”时状态点显示方案与其他方案不一致；
-6. 【修复】部分情况下后台安装应用数据读取失败的问题；
-7. 【更多】一些细节优化以及冗余内容移除。
-
-### V8.9(2019.06.14)
-1. 【新增】简易的新手引导；
-2. 【优化】在条件适宜的情况下，应用内应用程序图标与名称更新更及时；
-3. 【更多】一些细节优化与调整。
-
-### V8.8(2019.05.29)
-1. 【新增】备份与恢复；
-2. 【调整】一些细节调整。
-
-### V8.7(2019.05.09)
-1. 【新增】按 冻结次数、解冻次数、使用次数 排序*；
-2. 【新增】计划任务 - 任务 - ls，锁定屏幕；
-3. 【新增】更多设置 - 管理空间 - 清除xxxx列表中已卸载的应用；
-4. 【优化】一些稳定性增强与细节调整。
-
-### V8.6(2019.04.20)
-1. 【新增】更多设置 - 安装与卸载 - 安装完成后尝试删除安装包；
-2. 【新增】计划任务 - 可用命令 - sn，在通知栏显示一条通知；
-3. 【新增】更多设置 - 常规 - 缓存应用程序图标；
-4. 【调整】更多设置 的呈现方式；
-5. 【新增】清除全部缓存；
-6. 【新增】更多设置 - 通知栏 - 更多；
-7. 【更多】一些细节优化与调整。
-
-### V8.5(2019.04.02)
-1. 【修复】一些图标相关问题。
-
-### V8.4(2019.04.01)
-1. 【修复】部分情况下已冻结的应用程序图标显示异常；
-2. 【修复】安装应用载入中对话框不消失可能不会消失；
-3. 【修复】部分情况下某些计划任务未按计划执行的问题；
-4. 【新增】应用程序中文名“自冻”；
-5. 【更多】细节调整与错误修复。
-
-### V8.3(2019.03.17)
-1. 【新增】安装应用 - 始终允许指定来源的请求；
-2. 【新增】URI操作 - 始终允许指定来源的请求；
-3. 【修复】部分界面弹出时显示异常；
-4. 【优化】首次列表载入提速；
-5. 【优化】自检诊断载入提速；
-6. 【优化】移除部分无用代码；
-7. 【修复】安装应用时的一些问题。
-
-### V8.2(2019.02.27)
-1. 【新增】安装应用；
-2. 【新增】通过特定 Uri 打开主界面；
-3. 【优化】自检诊断；
-4. 【新增】部分情况下更多的提示；
-5. 【合入】一些多语言翻译；
-6. 【更多】一些细节优化调整。
-
-### V8.1(2019.02.08)
-1. 【新增】创建快捷方式（单个）时支持对名称、图标、目标、特征值、追加任务进行编辑修改；
-2. 【新增】任务命令 - su；
-3. 【修复】在低版本 Android 上配色异常的问题；
-4. 【新增】更多的提示；
-5. 【合入】一些翻译；
-6. 【新增】更多设置 - 创建快捷方式时允许编辑；
-7. 【新增】更多设置 - 清除自身全部数据；
-8. 【新增】界面风格 - 红色；
-9. 【小声】可以解冻后直接打开比如支付宝付款码等一些页面了；
-10. 【小声】创建快捷方式的时候可以套用来自一些支持的图标包的图标了；
-11. 【更多】一些细节优化调整。
-
-### V8.0(2019.01.28)
-1. 【新增】针对 快捷方式自动冻解 情况的更多选项；
-2. 【调整】搜索功能实现；
-3. 【新增】关闭计划任务编辑界面时提示保存；
-4. 【新增】计划任务支持多选删除；
-5. 【新增】计划任务 - 触发器任务 - 触发器 - 冻结应用时；
-6. 【新增】计划任务 - 任务 - sp ，用于启动指定应用；
-7. 【合入】新的以及修正过的翻译；
-8. 【调整】默认配色方案变更为”白色“；
-9. 【修复】一些偶发的崩溃问题；
-10. 【调整】一些细节优化与调整。
-
-## V7
-### V7.9(2019.01.11)
-1. 【优化】细节优化、部分异常修复以及稳定性提升；
-2. 【合入】部分新增多语言翻译；
-3. 【更多】崩溃上报流程优化、辅助工具包更新。
-
-### V7.8(2018.12.22)
-1. 【新增】更多设置 - 单击功能选择操作风格；
-2. 【新增】单击功能 - 创建冻结解冻快捷方式；
-3. 【新增】更多设置 - 快捷方式自动冻解；
-4. 【调整】自检诊断；
-5. 【新增】查看日志；
-6. 【新增】调试模式（更多的日志输出）；
-7. 【新增】一些过渡动画；
-8. 【优化】一些细节。
-
-### V7.7(2018.12.08)
-1. 【新增】更多设置 - 管理已存在的通知栏快捷冻结解冻通知；
-2. 【新增】更多设置 - 自检诊断 中，部分问题项可点击后直达；
-3. 【合并】合入一些新的翻译；
-4. 【修复】几处可能导致崩溃的问题。
-
-### V7.6(2018.12.01)
-1. 【新增】自检诊断；
-2. 【调整】部分菜单与选项显示顺序；
-3. 【优化】去除部分冗余内容。
-
-### V7.5(2018.11.20)
-1. 【新增】更多设置 - 避免冻结有通知的应用程序；
-2. 【修复】部分情况下 打开应用时、离开应用时 延时任务未对冲撤销的问题；
-3. 【更多】部分翻译更新以及一些细节优化。
-
-### V7.4(2018.11.18)
-1. 【新增】计划任务 - 打开应用时、离开应用时延时任务自动对冲撤销；
-2. 【新增】计划任务 - 内部变量 - [ppkgn]、[cpkgn]；
-3. 【新增】20天未更新后，可在提示检查更新时选择推迟20天再提醒；
-4. 【新增】更多设置 - 组织名称（仅ADB免ROOT模式用户可能有使用需要）；
-5. 【新增】删除计划任务时二次确认；
-6. 【修复】部分情况下通知栏一键锁屏瓷贴可能无法使用的问题；
-7. 【更多】个别细节优化调整。
-
-### V7.3(2018.11.10)
-1. 【新增】计划任务 - 开关蓝牙；
-2. 【调整】提示检查更新的出现时间。
-
-### V7.2(2018.10.28)
-1. 【新增】桌面小部件 - 计划任务；
-2. 【新增】支持使用 URL Scheme 唤起冻结解冻弹窗；
-3. 【调整】桌面小部件 - 一键冻结、一键解冻、一键锁屏 创建流程调整；
-4. 【新增】桌面小部件 - 冻结解冻启动（类似于桌面冻结解冻启动快捷方式）；
-5. 【新增】计划任务 - 任务延时；
-6. 【更多】细节调整。
-
-### V7.1(2018.10.21)
-1. 【新增】更多设置 高级 删除全部计划任务；
-2. 【修复】个别设备升级至7.0版本后桌面无程序入口；
-3. 【新增】计划任务 中对于 开关蜂窝移动数据网络 的不完整支持；
-4. 【新增】当计划任务任务总数较多时可拖动滚动条快速滚动；
-5. 【合并】一些多语言内容。
-
-### V7.0(2018.10.09)
-1. 【警告】个别设备由低版本更新至本次及以后版本可能会导致桌面快捷方式需重新创建；
-2. 【新增】多选模式 - 创建冻结解冻桌面快捷方式；
-3. 【新增】更多设置 - 更少的提示；
-4. 【新增】更多设置 - 显示在最近任务列表；
-5. 【调整】默认只在桌面显示一个图标了；
-6. 【新增】单击功能 - 解冻启动；
-7. 【新增】单击功能 - 冻解启动；
-8. 【新增】更多设置 - 界面风格 - 白色；
-9. 【优化】更多设置 的部分内容与提示显示；
-10. 【优化】桌面快捷方式的创建；
-11. 【调整】默认不允许滑动移除通知栏冻结解冻通知（可在 更多设置 中调整为允许）；
-12. 【调整】抽出 避免冻结前台应用程序 至 更多设置；
-13. 【新增】计划任务 - 触发器 - 解冻应用时；
-14. 【新增】计划任务 - 触发器附加参数 - st（显示一段提示）；
-15. 【新增】关于软件 - 第三方开放源代码许可；
-16. 【新增】更多设置 - 计划任务 入口。
-
-## V6
-### V6.8(2018.09.22)
-1. 【新增】计划任务 - 任务 中，可使用 ; 以在单个计划中执行多种类任务；
-2. 【修复】计划任务 - 触发器 - 关闭屏幕时/打开屏幕时，两个触发器功能异常的问题；
-3. 【修复】计划任务 - 定时任务，删除定时任务后仍会执行一次的问题。
-
-### V6.7(2018.09.18)
-1. 【新增】多选模式 - 格式化后复制（方便 计划任务 的使用）；
-2. 【新增】删除计划任务（详情页右上角 垃圾桶 ）。
-
-### V6.6(2018.09.17)
-1. 【新增】计划任务-触发器-打开应用时。
-
-### V6.5(2018.09.07)
-1. 【新增】计划任务触发器（打开屏幕时，关闭屏幕时）；
-2. 【更多】一些细节调整。
-
-### V6.4(2018.08.27)
-1. 【修复】个别设备无法创建部分应用程序的桌面冻结解冻快捷方式；
-2. 【优化】移除部分现已不需要的内容。
-
-### V6.3(2018.08.20)
-1. 【优化】性能优化；
-2. 【优化】移除部分已不再使用的资源；
-3. 【优化】部分代码合并整理。
-
-### V6.2(2018.08.17)
-1. 【新增】计划任务中开启关闭WiFi；
-2. 【新增】解除免ROOT时检查更新按钮。
-
-### V6.1(2018.08.16)
-1. 【修复】重复的计划任务可能无效的问题；
-2. 【修复】6.0版本中一些数据没有完整迁移的问题。
-
-### V6.0(2018.08.15)
-1. 【新增】计划任务；
-2. 【优化】后台服务；
-3. 【优化】离开冻结；
-4. 【调整】桌面冻结解冻快捷方式执行行为，避免ROOT模式用户干等转圈；
-5. 【调整】通知栏冻结解冻快捷方式立即冻结现已不再回到桌面；
-6. 【调整】部分提示；
-7. 【优化】整理优化调整其他部分代码。
-
-## V5
-### V5.3(2018.08.11)
-1. 【新增】创建一键锁屏快捷方式；
-2. 【新增】一键冻结、一键解冻、一键锁屏桌面小部件；
-3. 【新增】多选模式加入移出离开冻结列表；
-4. 【修复】多选模式立即解冻、立即冻结失效；
-5. 【合入】一些多语言翻译；
-6. 【修复】已经划掉的应用通知栏快捷操作在更新FreezeYou后再次出现；
-7. 【调整】通知栏小图标；
-8. 【调整】将对应应用程序图标作为通知栏大图标；
-9. 【优化】一些细节优化。
-
-### V5.2(2018.08.09)
-1. 【优化】被更新时自动重新通知冻结解冻快捷方式的流程；
-2. 【优化】在最近任务中桌面冻结解冻快捷方式的呈现；
-3. 【优化】（相较上一版本）后台服务内存占用优化；
-4. 【优化】提供针对已ROOT设备的不影响SmartLock的锁屏方案（有ROOT时直接实行，无需手动调整）；
-5. 【新增】7.0及以上设备通知栏一键锁屏瓷贴。
-
-### V5.1(2018.08.08)
-1. 【新增】疑难解答；
-2. 【优化】性能与稳定性；
-3. 【新增】单击模式新增加入/移出一键冻结/一键解冻/离开冻结功能；
-4. 【修复】一些影响使用的异常；
-5. 【调整】部分数据存储格式；
-6. 【调整】收纳菜单中的一键冻结一键解冻，减小误触概率；
-7. 【合入】一些新增加的多语言翻译。
-
-### V5.0(2018.08.05)
-1. 【新增】离开即冻结；
-2. 【新增】开启无障碍服务时锁屏自动冻结不再冻结前台应用；
-3. 【调整】一键冻结、一键解冻实现方式；
-4. 【新增】重启设备后重新显示相关应用的冻结解冻快捷方式；
-5. 【新增】查看模式新增“离开冻结”；
-6. 【新增】桌面快捷查看方式新增“离开冻结”；
-7. 【更多】一些细节改进与易用性提升。
-
-## V4
-### V4.5(2018.08.01)
-1. 【新增】缓存应用列表数据，加快二次启动加载速度；
-2. 【调整】移除菜单中的“退出应用”；
-3. 【新增】是否上报日志提示框中加入检查更新按钮，尝试避免后台异常上报统计被老版本报错淹没的情况；
-4. 【新增】可选择是否保存单击功能状态；
-5. 【新增】更多设置中 关于软件、检查更新、感谢名单、协助翻译 入口。
-
-### V4.4(2018.07.30)
-1. 【新增】获取已冻结应用列表、冻结与解冻应用API；
-2. 【新增】合入多语言更新；
-3. 【移除】一些暂时无用的资源；
-4. 【调整】部分界面小幅调整。
-
-### V4.3(2018.07.26)
-1. 【新增】锁屏后一键冻结（更多设置）；
-2. 【调整】关于界面；
-3. 【新增】多选模式显示已选中数量；
-4. 【调整】5.0以下系统“选择操作”界面。
-
-### V4.2(2018.07.23)
-1. 【新增】多语言支持；
-2. 【合并】英语、繁体中文翻译；
-3. 【新增】允许禁止通知栏冻结解冻快捷方式被划除；
-4. 【新增】允许点击通知栏快捷后不自动删除。
-
-### V4.1(2018.07.20)
-1. 【修复】单击模式选择立即冻结时主界面也会被关闭的问题；
-2. 【修复】单击模式选择自动冻解时两次单击同一应用没有自动切换冻结解冻的问题。
-
-### V4.0(2018.07.19)
-1. 【新增】主题；
-2. 【新增】大多数场景自动更新是否已冻结状态点；
-3. 【优化】是否已冻结状态点绘制；
-4. 【新增】是否已冻结状态点颜色跟随主题变化而变化；
-5. 【调整】分拆一键冻结、一键解冻、桌面快捷冻结解冻、主界面在最近任务列表的显示；
-6. 【优化】统一软件全局主题风格；
-7. 【新增】长按桌面图标一键解冻快捷方式（需桌面支持）；
-8. 【更多】部分细节优化调整。
-
-## V3
-### V3.11(2018.07.18)
-1. 【新增】一键冻结后可选择追加锁屏（更多设置）；
-2. 【调整】更新部分链接；
-3. 【优化】部分提示；
-4. 【优化】部分细节；
-5. 【新增】超15天未更新提示检查更新（现在后台报错很多都是已修复的老问题）。
-
-### V3.10(2018.07.16)
-1. 【新增】可调整单击应用列表应用时执行的操作（选择操作、立即解冻、立即冻结、自动冻解）；
-2. 【调整】取消应用名后追加的“（一键冻结）”与“（已冻结）”；
-3. 【调整】取消 是否存在于一键冻结列表中 状态点；
-4. 【优化】整理合并优化部分代码；
-5. 【调整】手动模式中ROOT模式解冻后不再提示是否启动应用；
-6. 【新增】一些提示。
-
-### V3.9(2018.07.15)
-1. 【新增】多选模式（立即冻结/立即解冻/加入移出一键冻结解冻列表）；
-2. 【新增】更多设置中可选择通知栏快捷方式是否立即冻结而非选择冻结与否。
-
-### V3.8(2018.07.13)
-1. 【修复】ROOT模式下，当已卸载应用存在于 一键冻结/一键解冻 列表时，未卸载的程序也没有冻结/解冻；
-2. 【调整】更新 激活免ROOT 相关链接，加快网页打开速度；
-3. 【新增】卸载应用时自动将应用移出一键解冻列表。
-
-### V3.7(2018.07.10)
-1. 【修复】部分设备个别应用创建桌面快捷方式失败；
-2. 【新增】一处提示。
-
-### V3.6(2018.07.09)
-1. 【修复】部分设备冻结应用后相关应用从一键冻结列表消失的问题（感谢用户 wcedla ）；
-2. 【修复】勾选立即启动时通知栏快捷方式直接打开对应应用而非选择 冻结/启动 的问题；
-3. 【修复】部分情况一键冻结/一键解冻后无通知栏快捷方式的问题；
-4. 【优化】大量代码优化调整。
-
-### V3.5(2018.07.08)
-1. 【修复】个别用户个别应用冻结解冻界面以及主界面崩溃的问题；
-2. 【优化】复用部分代码，减小体积。
-
-### V3.4(2018.07.06)
-1. 【新增】一键解冻；
-2. 【修复】一键冻结后通知栏提示不跟随消失的问题；
-3. 【优化】免ROOT模式冻结解冻提速；
-4. 【优化】部分提示；
-5. 【修复】虚拟按键遮挡操作选择项的问题。
-
-### V3.3(2018.07.04)
-1. 【修复】启用“更多设置”中“快捷方式立即解冻并启动”时，在应用列表内仍直接执行解冻并启动应用而非选择冻结解冻的问题。
-
-### V3.2(2018.07.04)
-1. 【优化】冻结解冻用户界面；
-2. 【优化】桌面快捷方式图标清晰度；
-3. 【修复】列表长按冻结后原列表界面被关闭的问题。
-
-### V3.1(2018.07.03)
-1. 【优化】加快载入应用列表速度；
-2. 【优化】整合部分代码；
-3. 【优化】ROOT模式等待系统反馈时处理。
-
-### V3.0(2018.07.01)
-1. 【修复】免ROOT模式偶发的无法解冻问题；
-2. 【优化】免ROOT模式冻结解冻提速。
-
-## V2
-### V2.15(2018.07.01)
-1. 【调整】通知ID生成方式变更；
-2. 【新增】重启应用（可在极少出现的免ROOT冻结后解冻走ROOT模式的情况使用。“保存数据的时候系统给的是成功，然而实际没成功，真是令人费解”）；
-3. 【更多】部分细节优化调整。
-
-### V2.14(2018.06.27)
-1. 【新增】监听应用卸载；
-2. 【修复】应用列表部分数据在手动切换后仍未及时刷新；
-3. 【优化】一个文字表述；
-4. 【优化】部分操作界面。
-
-### V2.13(2018.06.24)
-1. 【新增】搜索；
-2. 【新增】启动模式（更多设置）；
-3. 【修复】手动模式一处权限不足导致的崩溃问题（感谢提交异常的一位华为Mate10用户、一位索尼Xperia XZ Premium G8142用户、一位小米5X用户）（排名不分先后）；
-4. 【优化】快速操作通知栏；
-5. 【优化】微量代码。
-
-### V2.12(2018.06.17)
-1. 【新增】通知栏快捷；
-2. 【新增】崩溃日志提示上传。
-
-### V2.11(2018.06.14)
-1. 【新增】支持更换图标（更多设置）；
-2. 【新增】支持免ROOT方式已冻结的应用程序直接创建桌面快捷方式；
-3. 【优化】部分细节处优化。
-
-### V2.10(2018.06.12)
-1. 【调整】应用程序图标；
-2. 【优化】部分界面细节；
-3. 【新增】异常监控。
-
-### V2.9(2018.06.11)
-1. 【优化】操作流程优化
-2. 【新增】复制包名
-
-### V2.8(2018.06.10)
-1. 【新增】手动模式（更多设置）
-2. 【优化】快捷方式图标清晰度
-
-### V2.7(2018.02.22)
-1. 【新增】列表右侧显示冻结状态以及是否处于一键冻结列表（蓝：已冻结/处于，白：未冻结/不处于）
-2. 【优化】列表加载速度
-
-### V2.6(2018.02.18)
-1. 【新增】直接显示应用是否存在于一键冻结列表
-
-### V2.5(2018.02.14)
-1. 【优化】对4.4及以下非标应用的兼容
-2. 【新增】首屏警告 不再提醒
-3. 【调整】部分描述
-
-### V2.4(2018.02.13)
-1. 【新增】弹窗显示图标
-2. 【优化】多处交互细节优化
-3. 【优化】容错能力提升
-
-### V2.3(2018.02.09)
-1. 【新增】快捷方式 直接运行对应程序（更多设置）
-2. 【新增】解冻后直接启动（更多设置）
-
-### V2.2(2018.02.08)
-1. 【新增】一键冻结 支持 免ROOT模式
-2. 【修复】免ROOT模式 一键冻结列表 显示异常
-3. 【调整】部分文案
-4. 【新增】检查更新
-5. 【优化】ROOT模式 一键冻结 提速
-
-### V2.1(2018.02.07)
-1. 【新增】解除免ROOT
-2. 【修复】免ROOT模式应用列表长按处理错误
-3. 【修复】一些问题
-
-### V2.0(2018.02.05)
-1. 【新增】免ROOT（一键冻结暂未适配免ROOT）
-2. 【新增】拨号盘启动 \*#\*#373393968#\*#\*(即\*#\*#FreezeYou#\*#\*)
-3. 【新增】查看模式 （仅 用户应用）
-4. 【优化】支持更多启动器使用应用程序长按快捷操作
-5. 【调整】个别文案
-
-## V1
-### V1.19(2018.02.03)
-1. 【优化】兼容 奥利奥
-2. 【修复】无法为部分非标应用程序创建冻结/解冻快捷方式的问题
-3. 【新增】应用程序长按快捷操作（需要 启动器 支持）
-4. 【调整】部分文案
-5. 【调整】菜单"关于软件"
-
-### V1.18(2018.02.01)
-1. 【修复】一处崩溃错误
-2. 【新增】退出选项（强迫症福音）
-3. 【调整】部分文案
-
-### V1.17(2018.01.28)
-1. 【新增】查看模式（仅系统应用）
-
-### V1.16(2018.01.23)
-1. 【新增】查看模式（一键冻结列表）
-2. 【优化】两处提示信息
-
-### V1.15(2018.01.??)
-1. 【修复】直接 HOME键 时，冻结/解冻 快捷方式 二次调用时界面异常
-2. 【优化】整理代码
-
-### V1.14(2018.01.??)
-1. 【修复】切换查看模式时卡顿的问题
-2. 【修复】部分设备个别功能崩溃
-
-### V1.13(2018.01.12)
-1. 【新增】查看模式（已冻结/未冻结/全部）
-2. 【优化】部分文案优化
-
-### V1.12(2018.01.08)
-1. 【优化】减小安装包大小
-
-### V1.11(201?.??.??)
-1. 【修复】部分设备无法创建快捷方式
-2. 【优化】快捷方式弹窗风格跟随系统
-3. 【修复】部分设备自身功能缺失导致本应用程序崩溃
-
-### V1.10(2017.11.09)
-1. 【新增】应用列表中，标出已冻结应用；
-2. 【优化】部分逻辑判断等
-3. 【新增】关于
-4. 【新增】一处 "一键冻结" 入口
-
-### V1.9(2017.11.05)
-* 细节优化
-
-### V1.8(2017.11.0?)
-* 新增 一键冻结（需手动将需要一键冻结的应用程序加入一键冻结列表）
-
-### V1.7(2017.11.03)
-* 减小安装包体积（几乎减半）
-* 新增一些提示
-* 向下支持安卓4.0（API 14）
-
-### V1.6(2017.11.03)
-* 增加未获得ROOT权限等部分情况的提示，避免总是简单的“执行完成”
-
-### V1.5(2017.10.29)
-* 可以直接在列表里 冻结/解冻 应用程序了（长按）
-* 新增了一点提示
-* 略微减小安装包大小
+# changelog
+ ## v10
+ ### v10.15(2021.02.02)
+ 1. [Adjustment] Some details of the main interface;
+ 2. [Fix] Some occasional bugs.
+ * [download this version](https://github.com/FreezeYou/FreezeYou/releases/download/V10.15(141)/app-release.apk)
+
+ ### V10.14(2021.01.04)
+ 1. [Adjustment] When you check Don't show warning again at startup, not only the warning pop-up window will no longer be displayed, but also the warning text above the loading animation will no longer be displayed.
+ * [Download this version](https://github.com/FreezeYou/FreezeYou/releases/download/V10.14(140)/app-release.apk)
+
+ ### V10.13(2020.12.04)
+ 1. [New] Notification bar tile-self-freezing, tap to open the main interface.
+ * [Download this version](https://github.com/FreezeYou/FreezeYou/releases/download/V10.13(139)/app-release.apk)
+
+ ### V10.12(2020.11.04)
+ 1. [Revision] Correction and optimization of some multi-language related content (thanks to __tommynok__ for the help).
+ * [Download this version](https://github.com/FreezeYou/FreezeYou/releases/download/V10.12(138)/app-release.apk)
+
+ ### V10.11(2020.11.03)
+ 1. [New] Ukrainian translation (thanks to __tommynok__ for the help);
+ 2. [New] Some V2 open APIs (documents to be updated);
+ 3. [Optimization] Some functions are optimized.
+ * [Download this version](https://github.com/FreezeYou/FreezeYou/releases/download/V10.11(137)/app-release.apk)
+
+ ### V10.10(2020.10.04)
+ 1. [More] Some detailed optimizations and bug fixes.
+ * [Download this version](https://github.com/FreezeYou/FreezeYou/releases/download/V10.10(136)/app-release.apk)
+
+ ### V10.9(2020.09.03)
+ 1. [Adjustment] Whitelist and Whitelist are renamed to allow list and allow list;
+ 2. [Adjustment] Remove all "sponsorship support";
+ 3. [New] Russian translation (thanks to __tommynok__ for the help);
+ 4. [Fix] A problem that will cause an abnormal crash (thanks to __tommynok__ for the help);
+ 5. [Optimization] Multi-language part;
+ 6. [More] Some detailed optimizations and bug fixes.
+ * [Download this version](https://github.com/FreezeYou/FreezeYou/releases/download/V10.9(135)/app-release.apk)
+
+ ### V10.8(2020.08.04)
+ * There are many changes in the core part of this version. Although it has been tested, there may still be some problems. If you are worried, you can update it a few days later.
+ 1. [New] More detailed failure prompts when freezing and unfreezing, instead of "failure";
+ 2. [Fix] In some cases, one-key freeze and one-key thaw are not executed correctly;
+ 3. [Adjustment] Select all in the main list and move it out of the collapsed menu;
+ 4. [Adjustment] Manual mode interface;
+ 5. [New] Manual mode supports all existing freeze and thaw modes;
+ 6. [Adjustment] The default language when there is no match is changed from Simplified Chinese to English;
+ 7. [New] About the software-Contact us-Telegram group;
+ 8. [More] Some stability and minor bug fixes.
+
+ ### V10.7(2020.07.25)
+ 1. [New] System application (DISABLE mode), system application (DISABLE\_USER mode), system application (DISABLE\_UNTIL\_USED mode) (can be switched in More Settings-Freeze and Unfreeze-Select Freeze and Unfreeze Mode);
+ 2. [New] Freeze and unfreeze in the quick start-select the freeze and unfreeze mode;
+ 3. [More] Some details are optimized and adjusted.
+
+ ### V10.6(2020.07.20)
+ 1. [Adjustment] More settings-General-Save sorting mode status The default is changed from unchecked to checked;
+ 2. [Adjustment] Completely remove the "Island" mode in More Settings-Freeze and Unfreeze.
+
+ ### V10.5(2020.06.21)
+ 1. [New] More settings-Notification bar-Freeze and unfreeze-Create a corresponding quick notification (switch option) after thawing.
+
+ ### V10.4(2020.05.23)
+ 1. [Optimization] Optimize and adjust many details.
+
+ ### V10.3(2020.04.24)
+ 1. [Adjustment] The link address of troubleshooting and other web pages;
+ 2. [Adjustment] More settings, new grouping appearance;
+ 3. [Optimization] Some details are optimized and adjusted.
+
+ ### V10.2(2020.03.25)
+ 1. [New] More settings-General-Display the dividing line of the list;
+ 2. [Optimization] Fine-tuning of the main interface;
+ 3. [Adjustment] Partial UI fine-tuning;
+ 4. [Prompt] More settings-Freeze and Unfreeze-Mode-Demon Refining Pot is currently unavailable (testing is difficult, priority has been lowered, and temporarily suspended);
+ 5. [More] Some detailed adjustments;
+ 6. [Reminder] If you encounter any problems, please go to About the software-contact us to report.
+
+ ### V10.1(2020.03.08)
+ 1. [New] Prompt to request the system software package installer to install when the installation application check has no permission;
+ 2. [New] Main application list menu-More-Uninstall the third party application option;
+ 3. [New] Adaptive system dark mode status and more settings-Corresponding switches in general (only visible on Android 10 and above);
+ 4. [Fix] The problem that WIFI cannot be normally switched on and off in scheduled tasks on some devices;
+ 5. [Adjustment] Crash log recording process and generated file output location;
+ 6. [Reminder] If you encounter any problems, please go to About the software-contact us to report.
+
+ ### V10.0(2020.02.15)
+ 1. [New] Freeze and unfreeze ROOT-HIDE/UNHIDE mode;
+ 2. [New] More settings-Freeze and unfreeze-Select freeze and unfreeze mode;
+ 3. [Adjustment] Freeze and unfreeze process adjustment.
+
+ ## V9
+ ### V9.8(2020.01.14)
+ 1. [New] More settings-installation and uninstallation-try to avoid updating when in use;
+ 2. [New] Install application confirmation interface-install when not in the foreground;
+ 3. [New] Button for copying part of the prompt pop-up window;
+ 4. [New] About-Contact us.
+
+ ### V9.7(2020.01.01)
+ 1. [New] Multiple selection in the list-Add and remove my own selection.
+
+ ### V9.6(2019.12.08)
+ 1. [Fix] When the homepage layout is grid, the search box occasionally cannot be used;
+ 2. [Adjustment] The reminder check update interval is adjusted from 20 days to 30 days.
+
+ ### V9.5(2019.11.21)
+ 1. [New] Long press icon shortcut-scheduled task;
+ 2. [Optimization] Text display in some scenes;
+ 3. [Fix] Unexpected problems in some folders.
+
+ ### V9.4(2019.10.30)
+ 1. [New] Added a whitelist of installed applications and a whitelist of URI freezing and unfreezing for backup content;
+ 2. [Adjustment] The self-provided installation application entry is closed by default (if you need to use it after the update, please go to More Settings-Install and Uninstall, enable it);
+ 3. [Fix] Some problems are fixed.
+
+ ### V9.3(2019.10.09)
+ 1. [New] When the application is installed, the versionCode will be displayed in the version place;
+ 2. [New] Operation button at the bottom right corner of the main interface;
+ 3. [Adjustment] Replace the plan task entry icon on the main interface to increase the recognition;
+ 4. [Fix] The application crashes in some cases;
+ 5. [New] Scheduled task-Trigger-When freezing and unfreezing applications, additional parameters support quoting my list.
+
+ ### V9.2(2019.09.21)
+ 1. [New] More settings-Manage space-Manage my options (including sharing, copying aliases, and deleting);
+ 2. [New] Scheduled task-task-ff, uf command parameters support reference to the application set in "My Choice" (via application alias);
+ 3. [New] Scheduled task-Trigger-When opening the application, when leaving the application, additional parameters support the reference to the application set in "My Choice" (via application alias);
+ 4. [New] Query whether the API of the application can be installed silently through FreezeYou;
+ 5. [New] My choice has been added to backup and restore;
+ 6. [More] Some detailed adjustments.
+
+ ### V9.1(2019.09.03)
+ 1. [New] View mode-user-defined (my list);
+ 2. [Adjustment] Some detailed adjustments.
+
+ ### V9.0(2019.08.14)
+ 1. [New] More settings-General-Home page layout (list, grid);
+ 2. [Fix] The list classification is abnormal when the interface style is dark;
+ 3. [New] Open Capability-Freeze, unfreeze and data query operation capabilities through Provider;
+ 4. [More] Some details and stability optimization.
+
+ ## V8
+ ### V8.12(2019.07.29)
+ 1. [New] It is allowed to ignore the security detection of the screen mask layer when installing and uninstalling the application;
+ 2. [Fix] In some cases, the item selection status is displayed abnormally when multiple selections are made in the list;
+ 3. [Fix] After uninstalling a thawed application, the shortcut operation of freezing and thawing in the notification bar is not removed correctly;
+ 4. [New] Scheduled Tasks-Overview page supports opening and closing operations for each scheduled task;
+ 5. [Adjustment] Planning task-overview page layout;
+ 6. [Fix] The installation status is not displayed correctly when installing the application in ROOT mode;
+ 7. [More] Details optimization and bug fixes.
+
+ ### V8.11(2019.07.13)
+ 1. [New] Select all, select inverse;
+ 2. [New] Scheduled task-share;
+ 3. [New] When restoring the backup, you can select the part that needs to be restored;
+ 4. [Optimization] Some bug fixes and detail adjustments.
+
+ ### V8.10(2019.06.30)
+ 1. [Optimization] The speed of defrosting times, freezing times, and usage times in ascending and descending order;
+ 2. [New] More settings-General-Save the state of the sorting method;
+ 3. [New] More settings-Management space-reset count of defrost times, reset count of freeze times, reset count of usage times;
+ 4. [New] Simple loading status reminder;
+ 5. [Fix] When the interface style is "dark", the status point display scheme is inconsistent with other schemes;
+ 6. [Fix] The problem that the data reading of the background installation application fails in some cases;
+ 7. [More] Some detailed optimization and redundant content removal.
+
+ ### V8.9(2019.06.14)
+ 1. [New] Simple guide for novices;
+ 2. [Optimization] In suitable conditions, the application icon and name in the application are updated more timely;
+ 3. [More] Some details are optimized and adjusted.
+
+ ### V8.8(2019.05.29)
+ 1. [New] Backup and restore;
+ 2. [Adjustment] Some detailed adjustments.
+
+ ### V8.7(2019.05.09)
+ 1. [New] Sort by freezing times, thawing times, and using times*;
+ 2. [New] Scheduled task-task-ls, lock screen;
+ 3. [New] More settings-Manage space-Clear the uninstalled applications in the xxxx list;
+ 4. [Optimization] Some stability enhancements and detail adjustments.
+
+ ### V8.6(2019.04.20)
+ 1. [New] More settings-installation and uninstallation-try to delete the installation package after installation;
+ 2. [New] Scheduled tasks-Available commands-sn, a notification will be displayed in the notification bar;
+ 3. [New] More settings-General-Cache application icons;
+ 4. [Adjustment] the presentation of more settings;
+ 5. [New] Clear all caches;
+ 6. [New] More settings-notification bar-more;
+ 7. [More] Some details are optimized and adjusted.
+
+ ### V8.5(2019.04.02)
+ 1. [Fix] Some icon related issues.
+
+ ### V8.4(2019.04.01)
+ 1. [Fix] The icons of frozen applications are displayed abnormally in some cases;
+ 2. [Repair] The dialog box may not disappear when the installation application is loading;
+ 3. [Fix] The problem that some scheduled tasks are not executed as planned in some cases;
+ 4. [New] The Chinese name of the application is "自冻";
+ 5. [More] Detailed adjustments and bug fixes.
+
+ ### V8.3(2019.03.17)
+ 1. [New] Install apps-always allow requests from specified sources;
+ 2. [New] URI operation-always allow requests from specified sources;
+ 3. [Fix] Some interfaces are displayed abnormally when they pop up;
+ 4. [Optimization] Speed ​​up the first list loading;
+ 5. [Optimization] Speed ​​up the loading of self-check diagnosis;
+ 6. [Optimization] Remove some useless codes;
+ 7. [Fix] Some problems when installing the application.
+
+ ### V8.2(2019.02.27)
+ 1. [New] Install the application;
+ 2. [New] Open the main interface through a specific Uri;
+ 3. [Optimization] Self-check diagnosis;
+ 4. [New] More tips in some cases;
+ 5. [Combined] Some multilingual translations;
+ 6. [More] Some details are optimized and adjusted.
+
+ ### V8.1(2019.02.08)
+ 1. [New] When creating a shortcut (single), it supports editing and modifying the name, icon, target, feature value, and additional task;
+ 2. [New] Task command-su;
+ 3. [Fix] The problem of abnormal color matching on lower versions of Android;
+ 4. [New] More tips;
+ 5. [Combined] Some translations;
+ 6. [New] More settings-allow editing when creating shortcuts;
+ 7. [New] More settings-clear all your own data;
+ 8. [New] Interface style-red;
+ 9. [Lower voice] After unfreezing, you can directly open some pages such as Alipay payment code;
+ 10. [Small voice] When creating a shortcut, you can apply icons from some supported icon packs;
+ 11. [More] Some details are optimized and adjusted.
+
+ ### V8.0(2019.01.28)
+ 1. [New] More options for the automatic freezing and thawing of shortcuts;
+ 2. [Adjustment] The search function is realized;
+ 3. [New] Prompt to save when closing the scheduled task editing interface;
+ 4. [New] The scheduled task supports multiple selection and deletion;
+ 5. [New] Scheduled task-Trigger task-Trigger-Freeze application;
+ 6. [New] Scheduled task-task-sp, used to start the specified application;
+ 7. [Combined] New and revised translations;
+ 8. [Adjustment] The default color scheme is changed to "white";
+ 9. [Fix] Some occasional crashes;
+ 10. [Adjustment] Some details are optimized and adjusted.
+
+ ## V7
+ ### V7.9(2019.01.11)
+ 1. [Optimization] Details optimization, some exception repairs and stability improvement;
+ 2. [Combined] Partially added multilingual translation;
+ 3. [More] Crash reporting process optimization and auxiliary toolkit update.
+
+ ### V7.8(2018.12.22)
+ 1. [New] More settings-click the function to select the operating style;
+ 2. [New] Single-click function-create freeze and unfreeze shortcuts;
+ 3. [New] More settings-shortcuts are automatically frozen and thawed;
+ 4. [Adjustment] Self-check diagnosis;
+ 5. [New] View log;
+ 6. [New] Debug mode (more log output);
+ 7. [New] Some transition animations;
+ 8. [Optimization] Some details.
+
+ ### V7.7(2018.12.08)
+ 1. [New] More settings-Manage existing notification bars to quickly freeze and unfreeze notifications;
+ 2. [New] More settings-In self-check diagnosis, some problem items can be clicked directly;
+ 3. [Merge] Incorporate some new translations;
+ 4. [Fix] Several issues that may cause crashes.
+
+ ### V7.6(2018.12.01)
+ 1. [New] Self-check diagnosis;
+ 2. [Adjustment] Display order of some menus and options;
+ 3. [Optimization] Remove some redundant content.
+
+ ### V7.5(2018.11.20)
+ 1. [New] More settings-avoid freezing apps with notifications;
+ 2. [Fix] In some cases, the delayed task was not hedged and cancelled when opening or leaving the application;
+ 3. [More] Some translation updates and some details optimization.
+
+ ### V7.4(2018.11.18)
+ 1. [New] Scheduled tasks-Delayed tasks are automatically hedged and cancelled when the application is opened and when the application is left;
+ 2. [New] Scheduled tasks-internal variables-[ppkgn], [cpkgn];
+ 3. [New] After 20 days have not been updated, you can choose to postpone the update for 20 days when prompted to check the update;
+ 4. [New] More settings-organization name (only ADB free ROOT mode users may need to use it);
+ 5. [New] Confirm twice when deleting a scheduled task;
+ 6. [Fix] In some cases, the one-key lock screen ceramic stickers in the notification bar may not be used;
+ 7. [More] Optimization and adjustment of individual details.
+
+ ### V7.3(2018.11.10)
+ 1. [New] Scheduled task-switch Bluetooth;
+ 2. [Adjustment] prompt to check the time when the update appears.
+
+ ### V7.2(2018.10.28)
+ 1. [New] Desktop widget-scheduled task;
+ 2. [New] Support the use of URL Scheme to evoke freezing and unfreezing pop-ups;
+ 3. [Adjustment] Desktop widgets-one-key freeze, one-key thaw, one-key lock screen creation process adjustment;
+ 4. [New] Desktop widget-freeze and thaw startup (similar to the desktop freeze and thaw startup shortcut);
+ 5. [New] Scheduled task-task delay;
+ 6. [More] Detailed adjustments.
+
+ ### V7.1(2018.10.21)
+ 1. [New] More settings Advanced delete all scheduled tasks;
+ 2. [Fix] There is no program entry on the desktop after some devices are upgraded to version 7.0;
+ 3. [New] Incomplete support for switching cellular mobile data network in the planned task;
+ 4. [New] When the total number of scheduled tasks is large, you can drag the scroll bar to scroll quickly;
+ 5. [Merge] Some multilingual content.
+
+ ### V7.0(2018.10.09)
+ 1. [Warning] Updating individual devices from an earlier version to this and later versions may cause desktop shortcuts to be recreated;
+ 2. [New] Multi-selection mode-create a shortcut to freeze and unfreeze the desktop;
+ 3. [New] More settings-fewer prompts;
+ 4. [New] More settings-displayed in the recent task list;
+ 5. [Adjustment] By default, only one icon is displayed on the desktop;
+ 6. [New] Single-click function-unfreeze start;
+ 7. [New] Single-click function-freeze-thaw startup;
+ 8. [New] More settings-interface style-white;
+ 9. [Optimization] Part of the content and prompt display of more settings;
+ 10. [Optimization] Creation of desktop shortcuts;
+ 11. [Adjustment] By default, sliding to remove the notification bar is not allowed to freeze and unfreeze notifications (can be adjusted to allow in More Settings);
+ 12. [Adjust] pull out to avoid freezing the foreground application to more settings;
+ 13. [New] Scheduled task-trigger-when the application is unfreeze;
+ 14. [New] Scheduled task-Trigger additional parameter-st (display a section of prompt);
+ 15. [New] About software-third-party open source license;
+ 16. [New] More settings-Scheduled task entry.
+
+ ## V6
+ ### V6.8(2018.09.22)
+ 1. [New] Scheduled tasks-In tasks, you can use; to perform multiple types of tasks in a single plan;
+ 2. [Fix] Scheduled Task-Trigger-When the screen is closed/opened, the two triggers function abnormally;
+ 3. [Fix] Scheduled task-Scheduled task, the problem that the scheduled task will still be executed once after deleting the scheduled task.
+
+ ### V6.7(2018.09.18)
+ 1. [New] Multi-selection mode-copy after formatting (convenient for the use of scheduled tasks);
+ 2. [New] Delete the scheduled task (the trash can in the upper right corner of the details page).
+
+ ### V6.6(2018.09.17)
+ 1. [New] Scheduled Task-Trigger-When the application is opened.
+
+ ### V6.5(2018.09.07)
+ 1. [New] Scheduled task trigger (when the screen is turned on, when the screen is turned off);
+ 2. [More] Some detailed adjustments.
+
+ ### V6.4(2018.08.27)
+ 1. [Fix] Some devices cannot create desktop freeze-thaw shortcuts for some applications;
+ 2. [Optimization] Remove some of the content that is no longer needed.
+
+ ### V6.3(2018.08.20)
+ 1. [Optimization] Performance optimization;
+ 2. [Optimization] Remove some resources that are no longer used;
+ 3. [Optimization] Part of the code is merged and organized.
+
+ ### V6.2(2018.08.17)
+ 1. [New] Turn on and off WiFi in the scheduled task;
+ 2. [New] Check and update button when ROOT-free is released.
+
+ ### V6.1(2018.08.16)
+ 1. [Fix] The problem that repeated scheduled tasks may be invalid;
+ 2. [Fix] The problem that some data is not completely migrated in 6.0 version.
+
+ ### V6.0(2018.08.15)
+ 1. [New] Scheduled tasks;
+ 2. [Optimization] background service;
+ 3. [Optimization] Leave the freeze;
+ 4. [Adjustment] Freeze and unfreeze shortcut execution behavior on desktop to avoid ROOT mode users from waiting and turning around;
+ 5. [Adjustment] Freeze and unfreeze shortcuts in the notification bar freeze immediately and no longer return to the desktop;
+ 6. [Adjustment] Some prompts;
+ 7. [Optimization] Organize, optimize and adjust other parts of the code.
+
+ ## V5
+ ### V5.3(2018.08.11)
+ 1. [New] Create a one-key lock screen shortcut;
+ 2. [New] One-key freeze, one-key unfreeze, one-key lock screen desktop widgets;
+ 3. [New] Multi-selection mode is added and removed from the frozen list;
+ 4. [Repair] Multi-selection mode immediately unfreeze, immediate freeze invalidation;
+ 5. [Combined] Some multilingual translations;
+ 6. [Fix] The shortcut operation in the notification bar of the crossed out application reappears after updating FreezeYou;
+ 7. [Adjustment] Small icons in the notification bar;
+ 8. [Adjustment] Use the corresponding application icon as the large icon in the notification bar;
+ 9. [Optimization] Some details are optimized.
+
+ ### V5.2(2018.08.09)
+ 1. [Optimization] The process of automatically re-notifying freeze and unfreeze shortcuts when updated;
+ 2. [Optimization] In the recent task, the desktop freeze and thaw shortcuts are displayed;
+ 3. [Optimization] (compared to the previous version) optimized background service memory usage;
+ 4. [Optimization] Provide a lock screen solution that does not affect SmartLock for ROOT devices (implemented directly when there is ROOT, without manual adjustment);
+ 5. [New] One-key lock screen ceramic sticker on notification bar of devices of 7.0 and above.
+
+ ### V5.1(2018.08.08)
+ 1. [New] Troubleshooting;
+ 2. [Optimization] performance and stability;
+ 3. [New] One-click mode adds the function of adding/removing one-key freeze/one-key unfreeze/leave freeze;
+ 4. [Fix] Some abnormalities that affect usage;
+ 5. [Adjustment] Part of the data storage format;
+ 6. [Adjustment] One-key freeze and one-key defrost in the storage menu to reduce the probability of false touch;
+ 7. [Combined] Some newly added multi-language translations.
+
+ ### V5.0(2018.08.05)
+ 1. [New] Freeze when you leave;
+ 2. [New] When the accessibility service is enabled, the lock screen automatically freezes and no longer freezes the foreground application;
+ 3. [Adjustment] One-key freeze and one-key defrost realization method;
+ 4. [New] Re-display the freeze/thaw shortcuts of related applications after restarting the device;
+ 5. [New] Added "Leave Freeze" in view mode;
+ 6. [New] Added "Leave Freeze" in desktop shortcut view;
+ 7. [More] Some details are improved and ease of use is improved.
+
+ ## V4
+ ### V4.5(2018.08.01)
+ 1. [New] Cache application list data to speed up the second startup loading speed;
+ 2. [Adjustment] Remove "Exit Application" in the menu;
+ 3. [New] Whether to add a check update button in the report log prompt box, try to avoid the situation that the background abnormal report statistics is overwhelmed by the error report of the old version;
+ 4. [New] You can choose whether to save the state of the single-click function;
+ 5. [New] In more settings, about the software, check for updates, thank you list, and assist in translation.
+
+ ### V4.4(2018.07.30)
+ 1. [New] Get the list of frozen applications, freeze and unfreeze application APIs;
+ 2. [New] Multi-language update for integration;
+ 3. [Remove] Some temporarily useless resources;
+ 4. [Adjustment] Some interfaces are slightly adjusted.
+
+ ### V4.3(2018.07.26)
+ 1. [New] One-key freeze after lock screen (more settings);
+ 2. [Adjustment] About the interface;
+ 3. [New] Multi-selection mode displays the selected quantity;
+ 4. [Adjustment] "Select Operation" interface for systems below 5.0.
+
+ ### V4.2(2018.07.23)
+ 1. [New] Multi-language support;
+ 2. [Merge] English and Traditional Chinese translation;
+ 3. [New] Allow to prohibit the freezing and unfreezing shortcuts of the notification bar from being deleted;
+ 4. [New] Allows you to click the shortcut in the notification bar without automatically deleting it.
+
+ ### V4.1(2018.07.20)
+ 1. [Fix] The problem that the main interface will also be closed when you click the mode to select freeze immediately;
+ 2. [Fix] When clicking the mode to select automatic freeze-thaw, double-clicking the same application does not automatically switch the problem of freeze-thaw.
+
+ ### V4.0(2018.07.19)
+ 1. [New] Theme;
+ 2. [New] Whether most of the scenes are automatically updated whether the status point is frozen;
+ 3. [Optimization] Whether it has been frozen state point drawing;
+ 4. [New] Whether the color of the frozen state point changes with the change of the theme;
+ 5. [Adjustment] Split one-key freeze, one-key thaw, desktop shortcut freeze and thaw, and the display of the main interface in the recent task list;
+ 6. [Optimization] Unified software global theme style;
+ 7. [New] Long press the desktop icon to unfreeze the shortcut with one key (desktop support is required);
+ 8. [More] Some details are optimized and adjusted.
+
+ ## V3
+ ### V3.11(2018.07.18)
+ 1. [New] After one-key freeze, you can choose to add lock screen (more settings);
+ 2. [Adjustment] Update some links;
+ 3. [Optimization] Some tips;
+ 4. [Optimization] Part of the details;
+ 5. [New] If you haven't updated for more than 15 days, you will be prompted to check for updates.
+
+ ### V3.10(2018.07.16)
+ 1. [New] You can adjust the operation performed when you click the application list application (select operation, immediate defrost, immediate freezing, automatic defrosting);
+ 2. [Adjustment] Cancel the "(one-key freeze)" and "(frozen)" appended to the application name;
+ 3. [Adjustment] Cancel whether there is a status point in the one-key freeze list;
+ 4. [Optimization] Organize, merge and optimize some codes;
+ 5. [Adjustment] After the ROOT mode is thawed in the manual mode, it will no longer prompt whether to start the application;
+ 6. [New] Some tips.
+
+ ### V3.9(2018.07.15)
+ 1. [New] Multi-selection mode (freeze immediately/thawed immediately/add and remove one-key freeze/thaw list);
+ 2. [New] In more settings, you can choose whether to freeze the shortcuts in the notification bar immediately instead of choosing whether to freeze or not.
+
+ ### V3.8(2018.07.13)
+ 1. [Repair] In ROOT mode, when the uninstalled application is in the one-key freeze/one-key unfreeze list, the un-uninstalled program is not frozen/thawed either;
+ 2. [Adjustment] Update to activate related links without ROOT to speed up the opening of web pages;
+ 3. [New] Automatically remove the application from the one-click unfreeze list when uninstalling the application.
+
+ ### V3.7(2018.07.10)
+ 1. [Fix] Some devices failed to create desktop shortcuts for individual applications;
+ 2. [New] A reminder.
+
+ ### V3.6(2018.07.09)
+ 1. [Fix] The problem that related applications disappear from the one-click freeze list after some devices freeze applications (thanks to user wcedla);
+ 2. [Fix] Check the notification bar shortcut to open the corresponding application directly instead of selecting Freeze/Start when ticking the immediate startup;
+ 3. [Fix] The problem that there is no notification bar shortcut after one-key freeze/one-key thaw in some cases;
+ 4. [Optimization] A large number of code optimization adjustments.
+
+ ### V3.5(2018.07.08)
+ 1. [Fix] Issues that individual users freeze and unfreeze the interface and the main interface crashes in individual applications;
+ 2. [Optimization] Reuse part of the code to reduce the volume.
+
+ ### V3.4(2018.07.06)
+ 1. [New] One-click defrosting;
+ 2. [Fix] The problem that the notification bar does not follow and disappear after one-click freeze;
+ 3. [Optimization] Freeze and thaw speed in ROOT-free mode;
+ 4. [Optimization] Some tips;
+ 5. [Fix] The problem that the virtual buttons block the operation options.
+
+ ### V3.3(2018.07.04)
+ 1. [Fix] When the "Shortcut to unfreeze and start immediately" in "More Settings" is enabled, the application list is still directly unfreeze and start the application instead of selecting freeze and unfreeze.
+
+ ### V3.2(2018.07.04)
+ 1. [Optimization] Freeze and unfreeze user interface;
+ 2. [Optimization] The definition of desktop shortcut icons;
+ 3. [Fix] The problem that the original list interface is closed after the list is frozen by long press.
+
+ ### V3.1(2018.07.03)
+ 1. [Optimization] Speed ​​up loading the application list;
+ 2. [Optimization] Integrate part of the code;
+ 3. [Optimized] ROOT mode is processed while waiting for system feedback.
+
+ ### V3.0(2018.07.01)
+ 1. [Fix] The occasional unfreeze problem in ROOT-free mode;
+ 2. [Optimization] Freeze and unfreeze in ROOT mode to speed up.
+
+ ## V2
+ ### V2.15(2018.07.01)
+ 1. [Adjustment] Notification ID generation method changes;
+ 2. [New] Restart the application (it can be used in the rare situation that the ROOT is not frozen and then the ROOT mode is thawed. "The system gave success when saving the data, but the actual failure was really puzzling");
+ 3. [More] Some details are optimized and adjusted.
+
+ ### V2.14(2018.06.27)
+ 1. [New] Monitor application uninstallation;
+ 2. [Fix] Part of the data in the application list is still not refreshed in time after manual switching;
+ 3. [Optimization] A text description;
+ 4. [Optimization] Part of the operation interface.
+
+ ### V2.13(2018.06.24)
+ 1. [New] Search;
+ 2. [New] Startup mode (more settings);
+ 3. [Fix] A crash caused by insufficient permissions in manual mode (thanks to a Huawei Mate10 user who submitted an exception, a Sony Xperia XZ Premium G8142 user, and a Xiaomi 5X user) (in no particular order);
+ 4. [Optimization] Quick operation notification bar;
+ 5. [Optimization] Trace code.
+
+ ### V2.12(2018.06.17)
+ 1. [New] Shortcut notification bar;
+ 2. [New] Crash log prompts to upload.
+
+ ### V2.11(2018.06.14)
+ 1. [New] Support for changing icons (more settings);
+ 2. [New] Support the direct creation of desktop shortcuts for applications that have been frozen without ROOT;
+ 3. [Optimization] Some details are optimized.
+
+ ### V2.10(2018.06.12)
+ 1. [Adjustment] application icon;
+ 2. [Optimization] Part of the interface details;
+ 3. [New] Abnormal monitoring.
+
+ ### V2.9(2018.06.11)
+ 1. [Optimization] Operation process optimization
+ 2. [New] Copy package name
+
+ ### V2.8(2018.06.10)
+ 1. [New] Manual mode (more settings)
+ 2. [Optimization] Shortcut icon definition
+
+ ### V2.7(2018.02.22)
+ 1. [New] The right side of the list shows the frozen state and whether it is in the one-click freeze list (blue: frozen/in, white: not frozen/not in)
+ 2. [Optimization] List loading speed
+
+ ### V2.6(2018.02.18)
+ 1. [New] Directly display whether the application exists in the one-click freeze list
+
+ ### V2.5(2018.02.14)
+ 1. [Optimization] Compatibility with 4.4 and below non-standard applications
+ 2. [New] First screen warning, no more reminders
+ 3. [Adjustment] Partial Description
+
+ ### V2.4(2018.02.13)
+ 1. [New] Pop-up window display icon
+ 2. [Optimization] Optimization of multiple interaction details
+ 3. [Optimization] Improved fault tolerance
+
+ ### V2.3(2018.02.09)
+ 1. [New] Shortcut to run the corresponding program directly (more settings)
+ 2. [New] Start directly after thawing (more settings)
+
+ ### V2.2(2018.02.08)
+ 1. [New] One-key freeze support ROOT-free mode
+ 2. [Repair] ROOT-free mode, one-click freeze list display is abnormal
+ 3. [Adjustment] Part of the copywriting
+ 4. [New] Check for updates
+ 5. [Optimization] ROOT mode, one-key freeze, speed up
+
+ ### V2.1(2018.02.07)
+ 1. [New] Disable ROOT exemption
+ 2. [Fix] Free ROOT mode application list long press processing error
+ 3. [Fix] some problems
+
+ ### V2.0(2018.02.05)
+ 1. [New] ROOT-free (one-click freeze is not currently compatible with ROOT-free)
+ 2. [New] Dial pad start \*#\*#373393968#\*#\*(ie \*#\*#FreezeYou#\*#\*)
+ 3. [New] View mode (User application only)
+ 4. [Optimization] Support more launchers to use apps and long press shortcuts
+ 5. [Adjustment] Individual copywriting
+
+ ## V1
+ ### V1.19(2018.02.03)
+ 1. [Optimization] Compatible with Oreo
+ 2. [Fix] Cannot create freeze/unfreeze shortcuts for some non-standard applications
+ 3. [New] Long press application shortcut operation (requires launcher support)
+ 4. [Adjustment] Part of the copywriting
+ 5. [Adjustment] Menu "About Software"
+
+ ### V1.18(2018.02.01)
+ 1. [Fix] a crash error
+ 2. [New] Exit option (Gospel of Obsessive-Compulsive Disorder)
+ 3. [Adjustment] Part of the copywriting
+
+ ### V1.17(2018.01.28)
+ 1. [New] View mode (system application only)
+
+ ### V1.16(2018.01.23)
+ 1. [New] View mode (one-click freeze list)
+ 2. [Optimization] Two prompt messages
+
+ ### V1.15(2018.01.??)
+ 1. [Fix] Freeze/unfreeze shortcuts when pressing the HOME key directly, the interface is abnormal during the second call
+ 2. [Optimization] Organize the code
+
+ ### V1.14(2018.01.??)
+ 1. [Fix] The issue of freezing when switching the viewing mode
+ 2. [Fix] Individual functions of some devices crashed
+
+ ### V1.13(2018.01.12)
+ 1. [New] View mode (frozen/unfrozen/all)
+ 2. [Optimization] Some copywriting optimization
+
+ ### V1.12(2018.01.08)
+ 1. [Optimization] Reduce the size of the installation package
+
+ ### V1.11(201?.??.??)
+ 1. [Fix] Some devices cannot create shortcuts
+ 2. [Optimization] Shortcut pop-up style follow system
+ 3. [Fix] The application crashes due to missing functions of some devices
+
+ ### V1.10(2017.11.09)
+ 1. [New] In the application list, mark the frozen application;
+ 2. [Optimization] Some logical judgments, etc.
+ 3. [New] About
+ 4. [New] One "One-click Freeze" entry
+
+ ### V1.9(2017.11.05)
+ * Detail optimization
+
+ ### V1.8(2017.11.0?)
+ * Added one-key freeze (you need to manually add the applications that need one-key freeze to the one-key freeze list)
+
+ ### V1.7(2017.11.03)
+ * Reduce the size of the installation package (almost halved)
+ * Added some tips
+ * Downward support for Android 4.0 (API 14)
+
+ ### V1.6(2017.11.03)
+ * Added prompts for some situations such as not obtaining ROOT permissions, to avoid always simple "execution completed"
+
+ ### V1.5(2017.10.29)
+ * You can freeze/unfreeze applications directly in the list (long press)
+ * Added a little hint
+ * Slightly reduce the size of the installation package
