@@ -1,10 +1,9 @@
 # API
 
-__自冻 FreezeYou__ 提供了一些接口供外部调用，具体情况如下：  
-* [通过 __URI__ 冻结解冻应用程序](./uri.md)
-* [通过 __Provider__ 进行冻结解冻以及数据查询等操作](./provider.md)
-* [通过 __startActivity__ 冻结解冻应用程序](./start-activity.md)
+ __FreezeYou__ provides some interfaces for external calls, the details are as follows:
+ * [Freeze and unfreeze applications via __URI__](./uri.md)
+ * [Frozen, unfreeze and data query operations through __Provider__](./provider.md)
+ * [Freeze and unfreeze the application via __startActivity__](./start-activity.md)
 
 
-后续如新增一些对外接口以及接口能力，此页也会进行更新。
-
+ If some external interfaces and interface capabilities are added in the future, this page will also be updated.
