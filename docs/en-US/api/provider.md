@@ -74,34 +74,34 @@
 
  ## Parameter requirements
 
- | Use | Uri | Method | Arg | Extras |
- | ------------- | -----------------------------------  ---------------------- |:-------------:|:-----:| ---  ------ |
- | Get the current running mode | `Uri.parse("content://cf.playhi.freezeyou.export.QUERY")` | `QUERY_MODE` | Not applicable | Empty Bundle |
- | Get whether the application is frozen | `Uri.parse("content://cf.playhi.freezeyou.export.QUERY")` | `QUERY_FREEZE_STATUS` | Not applicable | Bundle, the key packageName must contain the name of the queried application package |
- | Get whether the application can be installed through **self-freezing**<Badge text="9.2+" type="tip"/> | `Uri.parse("content://cf.playhi.freezeyou.export.QUERY)`  | `QUERY_IF_CAN_INSTALL_APPLICATIONS_STATUS` | Not Applicable | Empty Bundle |
- | Perform unfreezing application operations | `Uri.parse("content://cf.playhi.freezeyou.export.UNFREEZE")` | `MODE_AUTO` or `MODE_ROOT` or `MODE_MROOT` | Not applicable | Bundle, key packageName must contain  The name of the unfrozen application package |
- | Perform freezing application operations | `Uri.parse("content://cf.playhi.freezeyou.export.FREEZE")` | `MODE_AUTO` or `MODE_ROOT` or `MODE_MROOT` | Not applicable | Bundle, key packageName must contain  Frozen application package name |
+| Use           | Uri                                                       | Method        | Arg   | Extras    |
+| ------------- | --------------------------------------------------------- |:-------------:|:-----:| --------- |
+| Get current operating mode | `Uri.parse("content://cf.playhi.freezeyou.export.QUERY")` | `QUERY_MODE` | Not applicable | Null Bundle |
+| Get whether the app is frozen | `Uri.parse("content://cf.playhi.freezeyou.export.QUERY")` | `QUERY_FREEZE_STATUS` | Not applicable | Bundle，key packageName Must contain the name of the application package being queried |
+| Access is available**FreezeYou**Install the app<Badge text="9.2+" type="tip"/> | `Uri.parse("content://cf.playhi.freezeyou.export.QUERY)` | `QUERY_IF_CAN_INSTALL_APPLICATIONS_STATUS` | Not applicable | null Bundle |
+| Perform defrosting application operations | `Uri.parse("content://cf.playhi.freezeyou.export.UNFREEZE")` | `MODE_AUTO`或`MODE_ROOT`或`MODE_MROOT` | Not applicable | Bundle，key packageName Must contain the name of the application package to be unfrozen |
+| Perform freezing application operations | `Uri.parse("content://cf.playhi.freezeyou.export.FREEZE")` | `MODE_AUTO`或`MODE_ROOT`或`MODE_MROOT` | Not applicable | Bundle，key packageName Must contain the name of the frozen application package |
 
 
  ## Return data
- ___If the corresponding key value is `null`, check whether the `Method` and `Extras` in the request are `null`.  ___
+___If the corresponding key value is `null`，Then check the request `Method` as well as `Extras` Is it `null`.___
 
- | Return value | Get the current running mode (key currentMode) | Get whether the application is frozen (key status) | Perform an unfreeze application operation (key result) | Perform a frozen application operation (key result) | Get whether the application can be installed through self-freezing (  Key status) |
- | ----- | ------------------------------- | -----------  ----------------- | --------------------------- | ----  ---------------------- | ----------------------- |
- | dpm | DPM (ROOT free) mode (ROOT mode may be available) | Not Applicable | Not Applicable | Not Applicable | Not Applicable |
- | root | ROOT mode (DPM mode is not available) | Not Applicable | Not Applicable | Not Applicable | Not Applicable |
- | unavailable | DPM and ROOT modes are not available | Not applicable | Not applicable | Not applicable | Not applicable |
- | -4 | Not Applicable | Not Applicable | ROOT Mode Defrosting Failed | ROOT Mode Freezing Failed | Not Applicable |
- | -3 | Not Applicable | Not Applicable | DPM Mode Defrosting Failed | DPM Mode Freezing Failed | Not Applicable |
- | -2 | Not Applicable | The packageName key value in the Bundle is null | The packageName key value in the Bundle is null | The packageName key value in the Bundle is null | Not applicable |
- | -1 | Not applicable | FreezeYou internal error | FreezeYou internal error | FreezeYou internal error | Not applicable |
- | 0 | Not Applicable | Not Frozen | Successfully Thawed | Successfully Frozen | Not Applicable |
- | 1 | Not Applicable | ROOT Mode Freeze | Not Applicable | Not Applicable | Not Applicable |
- | 2 | Not Applicable | DPM Mode Freeze | Not Applicable | Not Applicable | Not Applicable |
- | 3 | Not Applicable | DPM + ROOT Dual Mode Freeze | Not Applicable | Not Applicable | Not Applicable |
- | 998 | Not applicable | Corresponding application not found | Corresponding application not found | Corresponding application not found | Not applicable |
- | 999 | Not Applicable | Not Applicable | Check that it is not frozen, no need to defrost | Check that it is not thawed, no need to freeze | Not applicable |
- | Others | Not Applicable | Not Applicable | Not Applicable | Not Applicable | boolean\[\]{Estimation function is available, installation channel is available, ROOT permission, DPM permission} |
+| return value | Get current operating mode（key currentMode）| Get whether the app is frozen（key status）| Perform defrosting application operations（key result）| Perform freezing application operations（key result）| Get whether the app can be installed through self-freezing（key status) |
+| ----- | ------------------------------- | ---------------------------- | --------------------------- | -------------------------- | ----------------------- |
+| dpm | DPM（waived ROOT）model（ROOT Mode may be available） | Not applicable | Not applicable | Not applicable | Not applicable |
+| root | ROOT model（DPM Mode is not available） | Not applicable | Not applicable | Not applicable | Not applicable |
+| unavailable | DPM and ROOT None of the modes are available | Not applicable | Not applicable | Not applicable | Not applicable |
+| -4 | Not applicable | Not applicable | ROOT Mode thawing failed | ROOT Mode freeze failed | Not applicable |
+| -3 | Not applicable | Not applicable | DPM Mode thawing failed | DPM Mode freeze failed | Not applicable |
+| -2 | Not applicable | Bundle middle packageName Key value null | Bundle middle packageName Key value null | Bundle middle packageName Key value null | Not applicable |
+| -1 | Not applicable | (FreezeYou) internal error | (FreezeYou) internal error | (FreezeYou) internal error | Not applicable |
+| 0 | Not applicable | Not frozen | Thawed successfully | Freeze successfully | Not applicable |
+| 1 | Not applicable | ROOT Mode freeze | Not applicable |Not applicable | Not applicable |
+| 2 | Not applicable | DPM Mode freeze | Not applicable | Not applicable | Not applicable |
+| 3 | Not applicable | DPM + ROOT Dual mode freeze | Not applicable | Not applicable | Not applicable |
+| 998 | Not applicable | No corresponding application found | No corresponding application found | No corresponding application found | Not applicable |
+| 999 | Not applicable | Not applicable | Check that it is not frozen, no need to thaw | The inspection found that it is not thawed, no need to freeze | Not applicable |
+| other | Not applicable | Not applicable | Not applicable | Not applicable | boolean\[\]{Estimation function is available, installation channel is available, have ROOT Authority, Have DPM permissions} |
 
  ## Sample
  -[FreezeYouApiTest](https://github.com/Playhi/FreezeYouApiTest)
