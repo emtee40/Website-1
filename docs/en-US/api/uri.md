@@ -1,62 +1,62 @@
-# 通过 URI 冻结解冻应用程序
-[[toc]]
+# Freeze and unfreeze the application via uri
+ [[toc]]
 
-## 授权范围
-- 唤起 **FreezeYou** 的 **冻结/解冻/启动** 对话框（出于安全考虑，首次 **冻结/解冻/启动** 具体操作必须由用户自主完成）。
+ ## Authorization scope
+ -Call up the **freeze/unfreeze/start** dialog box of **freezeyou** (for safety reasons, the first **freeze/unfreeze/start** specific operations must be done by the user independently).
 
-## 如何使用
+ ## how to use
 
-### 嵌入 HTML
-#### 请求 冻结/解冻/启动 [应用包名]
-``` html
-<a href="freezeyou://fuf/?pkgName=[应用包名][&action=[操作]]">请求 冻结/解冻/启动 [应用包名]</a>
-```
+ ### Embed html
+ #### Request Freeze/Unfreeze/Start [app package name]
+ ``` html
+ <a href="freezeyou://fuf/?pkgName=[app package name][&action=[action]]">request to freeze/thaw/start [app package name]</a>
+ ```
 
-#### 请求 冻结/解冻/启动 USIM卡应用
-``` html
-<a href="freezeyou://fuf/?pkgName=com.android.stk">请求 冻结/解冻/启动 USIM卡应用</a>
-```
-[点此尝试 冻结/解冻/启动 USIM卡应用(com.android.stk)](freezeyou://fuf/?pkgName=com.android.stk)
+ #### Request Freeze/Unfreeze/Start USIM Card Application
+ ``` html
+ <a href="freezeyou://fuf/?pkgName=com.android.stk">Request to freeze/unfreeze/start USIM card application</a>
+ ```
+ [Click here to try to freeze/unfreeze/start the USIM card application (com.android.stk)](freezeyou://fuf/?pkgName=com.android.stk)
 
-#### 请求 冻结/解冻/启动 USIM卡应用 <Badge text="8.3+" type="tip"/>
-``` html
-<a href="freezeyou://fuf/?pkgName=com.android.stk&action=fuf">请求 冻结/解冻/启动 USIM卡应用</a>
-```
-[点此尝试 冻结/解冻/启动 USIM卡应用(com.android.stk)](freezeyou://fuf/?pkgName=com.android.stk&action=fuf)
+ #### Request to freeze/unfreeze/start USIM card application <Badge text="8.3+" type="tip"/>
+ ``` html
+ <a href="freezeyou://fuf/?pkgName=com.android.stk&action=fuf">Request to freeze/unfreeze/start USIM card application</a>
+ ```
+ [Click here to try to freeze/unfreeze/start the USIM card application (com.android.stk)](freezeyou://fuf/?pkgName=com.android.stk&action=fuf)
 
-#### 请求 解冻 USIM卡应用 <Badge text="8.3+" type="tip"/>
-``` html
-<a href="freezeyou://fuf/?pkgName=com.android.stk&action=unfreeze">请求 解冻 USIM卡应用</a>
-```
-[点此尝试 解冻 USIM卡应用(com.android.stk)](freezeyou://fuf/?pkgName=com.android.stk&action=unfreeze)
+ #### Request to unfreeze the USIM card application <Badge text="8.3+" type="tip"/>
+ ``` html
+ <a href="freezeyou://fuf/?pkgName=com.android.stk&action=unfreeze">Request to unfreeze the USIM card application</a>
+ ```
+ [Click here to try to unfreeze the USIM card application (com.android.stk)](freezeyou://fuf/?pkgName=com.android.stk&action=unfreeze)
 
-#### 请求 冻结 USIM卡应用 <Badge text="8.3+" type="tip"/>
-``` html
-<a href="freezeyou://fuf/?pkgName=com.android.stk&action=freeze">请求 冻结 USIM卡应用</a>
-```
-[点此尝试 冻结 USIM卡应用(com.android.stk)](freezeyou://fuf/?pkgName=com.android.stk&action=freeze)
+ #### Request to freeze the USIM card application <Badge text="8.3+" type="tip"/>
+ ``` html
+ <a href="freezeyou://fuf/?pkgName=com.android.stk&action=freeze">Request to freeze the USIM card application</a>
+ ```
+ [Click here to try to freeze the USIM card application (com.android.stk)](freezeyou://fuf/?pkgName=com.android.stk&action=freeze)
 
-#### 请求 解冻并启动(若已解冻则直接启动) USIM卡应用 <Badge text="8.3+" type="tip"/>
-``` html
-<a href="freezeyou://fuf/?pkgName=com.android.stk&action=unFreezeAndRun">请求 解冻并启动(若已解冻则直接启动) USIM卡应用</a>
-```
-[点此尝试 解冻并启动(若已解冻则直接启动) USIM卡应用(com.android.stk)](freezeyou://fuf/?pkgName=com.android.stk&action=unFreezeAndRun)
+ #### Request to unfreeze and start (if unfrozen, start directly) USIM card application <Badge text="8.3+" type="tip"/>
+ ``` html
+ <a href="freezeyou://fuf/?pkgName=com.android.stk&action=unFreezeAndRun">request to unfreeze and start (if it is unfrozen, start directly) USIM card application</a>
+ ```
+ [Click here to try to defrost and start (if it has been defrosted, start directly) USIM card application (com.android.stk)](freezeyou://fuf/?pkgName=com.android.stk&action=unFreezeAndRun)
 
 
-### 应用间
-``` java
-Uri webPage = Uri.parse("freezeyou://fuf/?pkgName=" + pkgName);
-Intent intent = new Intent(Intent.ACTION_VIEW, webPage);
-if (intent.resolveActivity(getPackageManager()) != null) {
-   startActivity(intent);
-} else {
-   Toast.makeText(MainActivity.this, "无可用程序，是否已安装 FreezeYou 7.2 及以上版本呢？", Toast.LENGTH_LONG).show();
-}
-```
+ ### Application Room
+ ``` java
+ Uri webPage = Uri.parse("freezeyou://fuf/?pkgName=" + pkgName);
+ Intent intent = new Intent(Intent.ACTION_VIEW, webPage);
+ if (intent.resolveActivity(getPackageManager()) != null) {
+    startActivity(intent);
+ } else {
+    Toast.makeText(MainActivity.this, "There is no program available. Have you installed FreezeYou 7.2 and above?", Toast.LENGTH_LONG).show();
+ }
+ ```
 
-## Sample
-- [FreezeYouApiTest](https://github.com/FreezeYou/FreezeYouApiTest)
+ ## Sample
+ -[FreezeYouApiTest](https://github.com/FreezeYou/FreezeYouApiTest)
 
-## Need Help
-* [Join QQ Group(704086494)](https://jq.qq.com/?_wv=1027&k=l356Aq75)
-- [Join QQ Group(838379270)](https://jq.qq.com/?_wv=1027&k=5vmxG1F)
+ ## Need Help
+ * [Join QQ Group(704086494)](https://jq.qq.com/?_wv=1027&k=l356Aq75)
+ -[Join QQ Group(838379270)](https://jq.qq.com/?_wv=1027&k=5vmxG1F)
