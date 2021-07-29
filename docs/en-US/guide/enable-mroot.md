@@ -15,12 +15,12 @@ Some functions need this special permission to be granted before they can be use
 ## File Download
 * ADB Tool and Code Pack (.zip format) : [Download link 1 (Source station)](https://freezeyou.playhi.net/attachment/urt.zip) | [Download link 2 (Baidu Net Disk)](https://pan.baidu.com/s/1RlHg4w0z5O2aNc_ejkeUvA)
 
-## Operation Method
-* 找到设备系统设置中的`开发者选项`（没有的可以试试多点几下`关于手机`，或搜索`"您的设备型号" + 开发者选项`）
-* 开启`开发者选项`中的`Android 调试`或`USB 调试`并将设备与具备 ADB 工具的计算机连接
-* 完整解压缩先前下载的压缩包（.zip 格式）
-* Linux用户执行解压后的`apply.sh`，Windows 用户执行解压后的`apply.cmd`或`apply`
-* 如果`正在尝试启用免ROOT模式......`下方的提示包含`Success:`，应该就成功了。如果没有成功，可以前往[免ROOT疑难解答](../faq/mroot.md)寻找相应的类似情况的解决方案尝试解决。
+## operation method
+ * Find the `Developer options` in the device system settings (If you don't have one, you can try a few more `About phone`, or search for `"Your device model" + developer options`)
+ * Enable `android debugging` or `usb debugging` in `developer options` and connect the device to a computer with adb tool
+ * Completely decompress the previously downloaded compressed package (.zip format)
+ * linux users execute the decompressed `apply.sh`, windows users execute the decompressed `apply.cmd` or `apply`
+ * If `Trying to enable root-free mode...` The prompt below contains `success:`, it should be successful.  If you are not successful, you can go to [ROOT-free troubleshooting] (../faq/mroot.md) to find the corresponding solution to the similar situation and try to solve it.
 * Always fail? → [NoRoot Faq](../faq/mroot.md)
 * Too complex? → [Use AutumnBox to enable FreezeYou NoRoot Mode](https://www.atmb.top/?from=freezeyou)
 
@@ -33,5 +33,4 @@ Some functions need this special permission to be granted before they can be use
 
 ## Need Help
 * [Join QQ Group](https://jq.qq.com/?_wv=1027&k=l356Aq75)
-
 
